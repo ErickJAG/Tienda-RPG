@@ -1,6 +1,6 @@
 public class Character {
 
-    //atributos
+    //atributos del personaje
     public int Dinero;
     public int Vida;
     public int Ataque;
