@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Character {
 
     //atributos del personaje
@@ -7,5 +10,8 @@ public class Character {
     private int Magia;
     private int Defensa;
     private int Velocidad;
+    List<Armadura> inventarioDArmaduras = new ArrayList<>();
+    List<Armas> inventarioArmas = new ArrayList<>();
+    List<Consumibles> inventarConsumibles = new ArrayList<>();
 
 }
