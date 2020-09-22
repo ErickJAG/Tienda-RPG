@@ -8,12 +8,15 @@ public class Consumibles {
     public int Velocidad;
     public int Salud;
 
+    //Metodo para definir los atributos de los objetos
     public static void main(String[] args) {
+        //Objetos
         Consumibles item1 = new Consumibles();
         Consumibles item2 = new Consumibles();
         Consumibles item3 = new Consumibles();
         Consumibles item4 = new Consumibles();
         Consumibles item5 = new Consumibles();
+        //Definicions de atributos
         item1.Salud=0;
         item1.PrecioC=0;
         item1.PrecioV=0;

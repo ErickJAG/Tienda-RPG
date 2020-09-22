@@ -11,8 +11,11 @@ public class Character {
     public int Defensa;
     public int Velocidad;
     
+    //Metodo para definir los atributos de los objetos
     public static void main(final String[] args) {
+        //Objeto
         Character personaje = new Character();
+        //Definicions de atributos
         personaje.Ataque= 5;
         personaje.Vida= 5;
         personaje.Dinero= 5000;

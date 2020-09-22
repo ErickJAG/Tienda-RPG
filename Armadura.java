@@ -6,13 +6,16 @@ public class Armadura {
     public int Defensa;
     public int Salud;
     public int Velocidad;
-
+    
+    //Metodo para definir los atributos de los objetos
     public static void main(String[] args) {
+        //Objetos
         Armadura armadura1 = new Armadura();
         Armadura armadura2 = new Armadura();
         Armadura armadura3 = new Armadura();
         Armadura armadura4 = new Armadura();
         Armadura armadura5 = new Armadura();
+        //Definicions de atributos
         armadura1.Salud=0;
         armadura1.PrecioC=0;
         armadura1.PrecioV=0;

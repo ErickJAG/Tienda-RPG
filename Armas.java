@@ -7,12 +7,15 @@ public class Armas {
     public int Magia;
     public int Velocidad;
 
+    //Metodo para definir los atributos de los objetos
     public static void main(String[] args) {
+        //Objetos
         Armas arma1 = new Armas();
         Armas arma2 = new Armas();
         Armas arma3 = new Armas();
         Armas arma4 = new Armas();
         Armas arma5 = new Armas();
+        //Definicions de atributos
         arma1.PrecioC=0;
         arma1.PrecioV=0;
         arma1.Ataque=0;
