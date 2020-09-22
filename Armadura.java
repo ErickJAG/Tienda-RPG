@@ -1,11 +1,11 @@
 public class Armadura {
 
     //atributos
-    private int PrecioC;
-    private int PrecioV;
-    private int Defensa;
-    private int Salud;
-    private int Velocidad;
+    public int PrecioC;
+    public int PrecioV;
+    public int Defensa;
+    public int Salud;
+    public int Velocidad;
 
     public static void main(String[] args) {
         Armadura armadura1 = new Armadura();
@@ -13,5 +13,30 @@ public class Armadura {
         Armadura armadura3 = new Armadura();
         Armadura armadura4 = new Armadura();
         Armadura armadura5 = new Armadura();
+        armadura1.Salud=0;
+        armadura1.PrecioC=0;
+        armadura1.PrecioV=0;
+        armadura1.Velocidad=0;
+        armadura1.Defensa=0;
+        armadura2.Salud=0;
+        armadura2.PrecioC=0;
+        armadura2.PrecioV=0;
+        armadura2.Velocidad=0;
+        armadura2.Defensa=0;
+        armadura3.Salud=0;
+        armadura3.PrecioC=0;
+        armadura3.PrecioV=0;
+        armadura3.Velocidad=0;
+        armadura3.Defensa=0;
+        armadura4.Salud=0;
+        armadura4.PrecioC=0;
+        armadura4.PrecioV=0;
+        armadura4.Velocidad=0;
+        armadura4.Defensa=0;
+        armadura5.Salud=0;
+        armadura5.PrecioC=0;
+        armadura5.PrecioV=0;
+        armadura5.Velocidad=0;
+        armadura5.Defensa=0;
     }
 }

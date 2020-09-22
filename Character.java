@@ -4,14 +4,14 @@ import java.util.List;
 public class Character {
 
     //atributos del personaje
-    private int Dinero;
-    private int Vida;
-    private int Ataque;
-    private int Magia;
-    private int Defensa;
-    private int Velocidad;
-
-    public static void main(String[] args) {
+    public int Dinero;
+    public int Vida;
+    public int Ataque;
+    public int Magia;
+    public int Defensa;
+    public int Velocidad;
+    
+    public static void main(final String[] args) {
         Character personaje = new Character();
         personaje.Ataque= 5;
         personaje.Vida= 5;
