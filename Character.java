@@ -12,6 +12,6 @@ public class Character {
     private int Velocidad;
     List<Armadura> inventarioDArmaduras = new ArrayList<>();
     List<Armas> inventarioArmas = new ArrayList<>();
-    List<Consumibles> inventarConsumibles = new ArrayList<>();
+    List<Consumibles> inventarioConsumibles = new ArrayList<>();
 
 }
