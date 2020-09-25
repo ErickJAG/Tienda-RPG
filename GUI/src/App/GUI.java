@@ -23,7 +23,7 @@ import javax.swing.border.BevelBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.border.MatteBorder;
 
-public class GUI extends JFrame {
+public class GUI extends JFrame implements ActionListener {
 
 	/**
 	 * 
@@ -105,6 +105,7 @@ public class GUI extends JFrame {
 		PanelArmasInv.setLayout(null);
 		
 		JButton BtnArmaI1 = new JButton("");
+		BtnArmaI1.setActionCommand("IArma1");
 		BtnArmaI1.setBackground(new Color(0, 51, 0));
 		BtnArmaI1.setRequestFocusEnabled(false);
 		BtnArmaI1.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -117,6 +118,7 @@ public class GUI extends JFrame {
 		PanelArmasInv.add(BtnArmaI1);
 		
 		JButton BtnArmaI2 = new JButton("");
+		BtnArmaI2.setActionCommand("IArma2");
 		BtnArmaI2.setRequestFocusEnabled(false);
 		BtnArmaI2.setForeground(Color.GREEN);
 		BtnArmaI2.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -129,6 +131,7 @@ public class GUI extends JFrame {
 		PanelArmasInv.add(BtnArmaI2);
 		
 		JButton BtnArmaI3 = new JButton("");
+		BtnArmaI3.setActionCommand("IArma3");
 		BtnArmaI3.setRequestFocusEnabled(false);
 		BtnArmaI3.setForeground(Color.GREEN);
 		BtnArmaI3.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -141,6 +144,7 @@ public class GUI extends JFrame {
 		PanelArmasInv.add(BtnArmaI3);
 		
 		JButton BtnArmaI4 = new JButton("");
+		BtnArmaI4.setActionCommand("IArma4");
 		BtnArmaI4.setRequestFocusEnabled(false);
 		BtnArmaI4.setForeground(Color.GREEN);
 		BtnArmaI4.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -153,6 +157,7 @@ public class GUI extends JFrame {
 		PanelArmasInv.add(BtnArmaI4);
 		
 		JButton BtnArmaI5 = new JButton("");
+		BtnArmaI5.setActionCommand("IArma5");
 		BtnArmaI5.setBorderPainted(false);
 		BtnArmaI5.setRequestFocusEnabled(false);
 		BtnArmaI5.setForeground(Color.GREEN);
@@ -172,6 +177,7 @@ public class GUI extends JFrame {
 		PanelInventario.add(panel_4_1);
 		
 		JButton btnNewButton_1_3 = new JButton("");
+		btnNewButton_1_3.setActionCommand("IArmadura1");
 		btnNewButton_1_3.setRequestFocusEnabled(false);
 		btnNewButton_1_3.setForeground(Color.GREEN);
 		btnNewButton_1_3.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -184,6 +190,7 @@ public class GUI extends JFrame {
 		panel_4_1.add(btnNewButton_1_3);
 		
 		JButton btnNewButton_1_1_1 = new JButton("");
+		btnNewButton_1_1_1.setActionCommand("IArmadura2");
 		btnNewButton_1_1_1.setRequestFocusEnabled(false);
 		btnNewButton_1_1_1.setForeground(Color.GREEN);
 		btnNewButton_1_1_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -196,6 +203,7 @@ public class GUI extends JFrame {
 		panel_4_1.add(btnNewButton_1_1_1);
 		
 		JButton btnNewButton_1_2_3 = new JButton("");
+		btnNewButton_1_2_3.setActionCommand("IArmadura3");
 		btnNewButton_1_2_3.setRequestFocusEnabled(false);
 		btnNewButton_1_2_3.setForeground(Color.GREEN);
 		btnNewButton_1_2_3.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -208,6 +216,7 @@ public class GUI extends JFrame {
 		panel_4_1.add(btnNewButton_1_2_3);
 		
 		JButton btnNewButton_1_2_1_1 = new JButton("");
+		btnNewButton_1_2_1_1.setActionCommand("IArmadura4");
 		btnNewButton_1_2_1_1.setRequestFocusEnabled(false);
 		btnNewButton_1_2_1_1.setForeground(Color.GREEN);
 		btnNewButton_1_2_1_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -220,6 +229,7 @@ public class GUI extends JFrame {
 		panel_4_1.add(btnNewButton_1_2_1_1);
 		
 		JButton btnNewButton_1_2_2_1 = new JButton("");
+		btnNewButton_1_2_2_1.setActionCommand("IArmadura5");
 		btnNewButton_1_2_2_1.setRequestFocusEnabled(false);
 		btnNewButton_1_2_2_1.setForeground(Color.GREEN);
 		btnNewButton_1_2_2_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -239,6 +249,7 @@ public class GUI extends JFrame {
 		PanelInventario.add(panel_4_2);
 		
 		JButton btnNewButton_1_4 = new JButton("");
+		btnNewButton_1_4.setActionCommand("IConsumible1");
 		btnNewButton_1_4.setRequestFocusEnabled(false);
 		btnNewButton_1_4.setForeground(Color.GREEN);
 		btnNewButton_1_4.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -251,6 +262,7 @@ public class GUI extends JFrame {
 		panel_4_2.add(btnNewButton_1_4);
 		
 		JButton btnNewButton_1_1_2 = new JButton("");
+		btnNewButton_1_1_2.setActionCommand("IConsumible2");
 		btnNewButton_1_1_2.setRequestFocusEnabled(false);
 		btnNewButton_1_1_2.setForeground(Color.GREEN);
 		btnNewButton_1_1_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -263,6 +275,7 @@ public class GUI extends JFrame {
 		panel_4_2.add(btnNewButton_1_1_2);
 		
 		JButton btnNewButton_1_2_4 = new JButton("");
+		btnNewButton_1_2_4.setActionCommand("IConsumible3");
 		btnNewButton_1_2_4.setRequestFocusEnabled(false);
 		btnNewButton_1_2_4.setForeground(Color.GREEN);
 		btnNewButton_1_2_4.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -275,6 +288,7 @@ public class GUI extends JFrame {
 		panel_4_2.add(btnNewButton_1_2_4);
 		
 		JButton btnNewButton_1_2_1_2 = new JButton("");
+		btnNewButton_1_2_1_2.setActionCommand("IConsumible4");
 		btnNewButton_1_2_1_2.setRequestFocusEnabled(false);
 		btnNewButton_1_2_1_2.setForeground(Color.GREEN);
 		btnNewButton_1_2_1_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -287,6 +301,7 @@ public class GUI extends JFrame {
 		panel_4_2.add(btnNewButton_1_2_1_2);
 		
 		JButton btnNewButton_1_2_2_2 = new JButton("");
+		btnNewButton_1_2_2_2.setActionCommand("IConsumible5");
 		btnNewButton_1_2_2_2.setRequestFocusEnabled(false);
 		btnNewButton_1_2_2_2.setForeground(Color.GREEN);
 		btnNewButton_1_2_2_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
@@ -299,6 +314,7 @@ public class GUI extends JFrame {
 		panel_4_2.add(btnNewButton_1_2_2_2);
 		
 		JButton BtnEquiparI = new JButton("Equipar");
+		BtnEquiparI.setActionCommand("Equip");
 		BtnEquiparI.setBorderPainted(false);
 		BtnEquiparI.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
 		BtnEquiparI.setForeground(new Color(51, 255, 51));
@@ -312,6 +328,7 @@ public class GUI extends JFrame {
 		PanelInventario.add(BtnEquiparI);
 		
 		JButton BtnVender = new JButton("Vender");
+		BtnVender.setActionCommand("Sell");
 		BtnVender.setOpaque(false);
 		BtnVender.setForeground(new Color(51, 255, 51));
 		BtnVender.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -386,6 +403,7 @@ public class GUI extends JFrame {
 		panel_1.add(panel_4_3);
 		
 		JButton btnNewButton_1_5 = new JButton("Bate de Metal");
+		btnNewButton_1_5.setActionCommand("TArma1");
 		btnNewButton_1_5.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_5.setRequestFocusEnabled(false);
 		btnNewButton_1_5.setForeground(Color.GREEN);
@@ -399,6 +417,7 @@ public class GUI extends JFrame {
 		panel_4_3.add(btnNewButton_1_5);
 		
 		JButton btnNewButton_1_1_3 = new JButton("Daga Siniestra");
+		btnNewButton_1_1_3.setActionCommand("TArma2");
 		btnNewButton_1_1_3.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_1_3.setRequestFocusEnabled(false);
 		btnNewButton_1_1_3.setForeground(Color.GREEN);
@@ -412,6 +431,7 @@ public class GUI extends JFrame {
 		panel_4_3.add(btnNewButton_1_1_3);
 		
 		JButton btnNewButton_1_2_5 = new JButton("Guante Magico");
+		btnNewButton_1_2_5.setActionCommand("TArma3");
 		btnNewButton_1_2_5.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_5.setRequestFocusEnabled(false);
 		btnNewButton_1_2_5.setForeground(Color.GREEN);
@@ -425,6 +445,7 @@ public class GUI extends JFrame {
 		panel_4_3.add(btnNewButton_1_2_5);
 		
 		JButton btnNewButton_1_2_1_3 = new JButton("Lanza Oscura");
+		btnNewButton_1_2_1_3.setActionCommand("TArma4");
 		btnNewButton_1_2_1_3.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_1_3.setRequestFocusEnabled(false);
 		btnNewButton_1_2_1_3.setForeground(Color.GREEN);
@@ -438,6 +459,7 @@ public class GUI extends JFrame {
 		panel_4_3.add(btnNewButton_1_2_1_3);
 		
 		JButton btnNewButton_1_2_2_3 = new JButton("Zweihander");
+		btnNewButton_1_2_2_3.setActionCommand("TArma5");
 		btnNewButton_1_2_2_3.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_2_3.setRequestFocusEnabled(false);
 		btnNewButton_1_2_2_3.setForeground(Color.GREEN);
@@ -458,6 +480,7 @@ public class GUI extends JFrame {
 		panel_1.add(panel_4_4);
 		
 		JButton btnNewButton_1_6 = new JButton("Cadenas");
+		btnNewButton_1_6.setActionCommand("TArmadura1");
 		btnNewButton_1_6.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_6.setRequestFocusEnabled(false);
 		btnNewButton_1_6.setForeground(Color.GREEN);
@@ -471,6 +494,7 @@ public class GUI extends JFrame {
 		panel_4_4.add(btnNewButton_1_6);
 		
 		JButton btnNewButton_1_1_4 = new JButton("Chaqueta Pesada");
+		btnNewButton_1_1_4.setActionCommand("TArmadura2");
 		btnNewButton_1_1_4.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_1_4.setRequestFocusEnabled(false);
 		btnNewButton_1_1_4.setForeground(Color.GREEN);
@@ -484,6 +508,7 @@ public class GUI extends JFrame {
 		panel_4_4.add(btnNewButton_1_1_4);
 		
 		JButton btnNewButton_1_2_6 = new JButton("Bata Oscura");
+		btnNewButton_1_2_6.setActionCommand("TArmadura3");
 		btnNewButton_1_2_6.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_6.setRequestFocusEnabled(false);
 		btnNewButton_1_2_6.setForeground(Color.GREEN);
@@ -497,6 +522,7 @@ public class GUI extends JFrame {
 		panel_4_4.add(btnNewButton_1_2_6);
 		
 		JButton btnNewButton_1_2_1_4 = new JButton("Capa Angelical");
+		btnNewButton_1_2_1_4.setActionCommand("TArmadura4");
 		btnNewButton_1_2_1_4.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_1_4.setRequestFocusEnabled(false);
 		btnNewButton_1_2_1_4.setForeground(Color.GREEN);
@@ -510,6 +536,7 @@ public class GUI extends JFrame {
 		panel_4_4.add(btnNewButton_1_2_1_4);
 		
 		JButton btnNewButton_1_2_2_4 = new JButton("Placa Paladin");
+		btnNewButton_1_2_2_4.setActionCommand("TArmadura5");
 		btnNewButton_1_2_2_4.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_2_4.setRequestFocusEnabled(false);
 		btnNewButton_1_2_2_4.setForeground(Color.GREEN);
@@ -530,6 +557,7 @@ public class GUI extends JFrame {
 		panel_1.add(panel_4_5);
 		
 		JButton btnNewButton_1_7 = new JButton("Medicina");
+		btnNewButton_1_7.setActionCommand("TConsumible1");
 		btnNewButton_1_7.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_7.setRequestFocusEnabled(false);
 		btnNewButton_1_7.setForeground(Color.GREEN);
@@ -543,6 +571,7 @@ public class GUI extends JFrame {
 		panel_4_5.add(btnNewButton_1_7);
 		
 		JButton btnNewButton_1_1_5 = new JButton("Pocion de Mana");
+		btnNewButton_1_1_5.setActionCommand("TConsumible2");
 		btnNewButton_1_1_5.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_1_5.setRequestFocusEnabled(false);
 		btnNewButton_1_1_5.setForeground(Color.GREEN);
@@ -556,6 +585,7 @@ public class GUI extends JFrame {
 		panel_4_5.add(btnNewButton_1_1_5);
 		
 		JButton btnNewButton_1_2_7 = new JButton("Gema Reflectora");
+		btnNewButton_1_2_7.setActionCommand("TConsumible3");
 		btnNewButton_1_2_7.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_7.setRequestFocusEnabled(false);
 		btnNewButton_1_2_7.setForeground(Color.GREEN);
@@ -569,6 +599,7 @@ public class GUI extends JFrame {
 		panel_4_5.add(btnNewButton_1_2_7);
 		
 		JButton btnNewButton_1_2_1_5 = new JButton("1-UP");
+		btnNewButton_1_2_1_5.setActionCommand("TConsumible4");
 		btnNewButton_1_2_1_5.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_1_5.setRequestFocusEnabled(false);
 		btnNewButton_1_2_1_5.setForeground(Color.GREEN);
@@ -582,6 +613,7 @@ public class GUI extends JFrame {
 		panel_4_5.add(btnNewButton_1_2_1_5);
 		
 		JButton btnNewButton_1_2_2_5 = new JButton("Restaurador");
+		btnNewButton_1_2_2_5.setActionCommand("TConsumible5");
 		btnNewButton_1_2_2_5.setHorizontalAlignment(SwingConstants.LEFT);
 		btnNewButton_1_2_2_5.setRequestFocusEnabled(false);
 		btnNewButton_1_2_2_5.setForeground(Color.GREEN);
@@ -595,6 +627,7 @@ public class GUI extends JFrame {
 		panel_4_5.add(btnNewButton_1_2_2_5);
 		
 		JButton BtnComprar = new JButton("Comprar");
+		BtnComprar.setActionCommand("Buy");
 		BtnComprar.setOpaque(false);
 		BtnComprar.setForeground(new Color(51, 255, 51));
 		BtnComprar.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -608,6 +641,7 @@ public class GUI extends JFrame {
 		panel_1.add(BtnComprar);
 		
 		JButton btnDescripcion = new JButton("Descripcion");
+		btnDescripcion.setActionCommand("Description");
 		btnDescripcion.setOpaque(false);
 		btnDescripcion.setForeground(new Color(51, 255, 51));
 		btnDescripcion.setFont(new Font("Tahoma", Font.PLAIN, 20));
@@ -626,5 +660,11 @@ public class GUI extends JFrame {
 		panel_1.add(LogoInventario_1);
 		PanelPrincipal.add(panel_3);
 		panel_3.setLayout(null);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
