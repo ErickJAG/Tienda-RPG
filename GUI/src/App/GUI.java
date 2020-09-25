@@ -51,6 +51,19 @@ public class GUI extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public GUI() {
+		
+		String opcion= "";
+		
+		ActionListener actionListener = new ActionListener() {
+			public void actionPerformed(ActionEvent describir) {
+				String command = describir.getActionCommand();
+		        System.out.println("Selected: " + command);
+			}
+		};
+		
+		
+		
+		System.out.println("Selected: ");
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 920, 630);
@@ -652,6 +665,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnDescripcion.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
 		btnDescripcion.setBackground(Color.YELLOW);
 		btnDescripcion.setBounds(243, 317, 129, 48);
+		btnDescripcion.addActionListener(actionListener);
 		panel_1.add(btnDescripcion);
 		
 		JLabel LogoInventario_1 = new JLabel("");
@@ -667,4 +681,8 @@ public class GUI extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 		
 	}
+
+	
+		
+	
 }
