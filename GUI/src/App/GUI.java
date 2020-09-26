@@ -63,7 +63,7 @@ public class GUI extends JFrame implements ActionListener {
 		
 		
 		
-		System.out.println("Selected: ");
+	
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 920, 630);
@@ -128,6 +128,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI1.setFocusTraversalKeysEnabled(false);
 		BtnArmaI1.setFocusable(false);
 		BtnArmaI1.setBounds(10, 20, 153, 21);
+		BtnArmaI1.addActionListener(actionListener);
 		PanelArmasInv.add(BtnArmaI1);
 		
 		JButton BtnArmaI2 = new JButton("");
@@ -141,6 +142,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI2.setBorderPainted(false);
 		BtnArmaI2.setBackground(new Color(0, 51, 0));
 		BtnArmaI2.setBounds(10, 41, 153, 21);
+		BtnArmaI2.addActionListener(actionListener);
 		PanelArmasInv.add(BtnArmaI2);
 		
 		JButton BtnArmaI3 = new JButton("");
@@ -154,6 +156,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI3.setBorderPainted(false);
 		BtnArmaI3.setBackground(new Color(0, 51, 0));
 		BtnArmaI3.setBounds(10, 61, 153, 21);
+		BtnArmaI3.addActionListener(actionListener);
 		PanelArmasInv.add(BtnArmaI3);
 		
 		JButton BtnArmaI4 = new JButton("");
@@ -167,6 +170,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI4.setBorderPainted(false);
 		BtnArmaI4.setBackground(new Color(0, 51, 0));
 		BtnArmaI4.setBounds(10, 82, 153, 21);
+		BtnArmaI4.addActionListener(actionListener);
 		PanelArmasInv.add(BtnArmaI4);
 		
 		JButton BtnArmaI5 = new JButton("");
@@ -180,6 +184,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI5.setFocusPainted(false);
 		BtnArmaI5.setBackground(new Color(0, 51, 0));
 		BtnArmaI5.setBounds(10, 102, 153, 21);
+		BtnArmaI5.addActionListener(actionListener);
 		PanelArmasInv.add(BtnArmaI5);
 		
 		JPanel panel_4_1 = new JPanel();
@@ -200,6 +205,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_3.setBorderPainted(false);
 		btnNewButton_1_3.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_3.setBounds(10, 20, 153, 21);
+		btnNewButton_1_3.addActionListener(actionListener);
 		panel_4_1.add(btnNewButton_1_3);
 		
 		JButton btnNewButton_1_1_1 = new JButton("");
@@ -213,6 +219,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_1_1.setBorderPainted(false);
 		btnNewButton_1_1_1.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_1_1.setBounds(10, 41, 153, 21);
+		btnNewButton_1_1_1.addActionListener(actionListener);
 		panel_4_1.add(btnNewButton_1_1_1);
 		
 		JButton btnNewButton_1_2_3 = new JButton("");
@@ -226,6 +233,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_3.setBorderPainted(false);
 		btnNewButton_1_2_3.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_3.setBounds(10, 61, 153, 21);
+		btnNewButton_1_2_3.addActionListener(actionListener);
 		panel_4_1.add(btnNewButton_1_2_3);
 		
 		JButton btnNewButton_1_2_1_1 = new JButton("");
@@ -239,6 +247,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_1_1.setBorderPainted(false);
 		btnNewButton_1_2_1_1.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_1_1.setBounds(10, 82, 153, 21);
+		btnNewButton_1_2_1_1.addActionListener(actionListener);
 		panel_4_1.add(btnNewButton_1_2_1_1);
 		
 		JButton btnNewButton_1_2_2_1 = new JButton("");
@@ -252,6 +261,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_2_1.setBorderPainted(false);
 		btnNewButton_1_2_2_1.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_2_1.setBounds(10, 102, 153, 21);
+		btnNewButton_1_2_2_1.addActionListener(actionListener);
 		panel_4_1.add(btnNewButton_1_2_2_1);
 		
 		JPanel panel_4_2 = new JPanel();
@@ -272,6 +282,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_4.setBorderPainted(false);
 		btnNewButton_1_4.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_4.setBounds(10, 20, 153, 21);
+		btnNewButton_1_4.addActionListener(actionListener);
 		panel_4_2.add(btnNewButton_1_4);
 		
 		JButton btnNewButton_1_1_2 = new JButton("");
@@ -285,6 +296,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_1_2.setBorderPainted(false);
 		btnNewButton_1_1_2.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_1_2.setBounds(10, 41, 153, 21);
+		btnNewButton_1_1_2.addActionListener(actionListener);
 		panel_4_2.add(btnNewButton_1_1_2);
 		
 		JButton btnNewButton_1_2_4 = new JButton("");
@@ -298,6 +310,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_4.setBorderPainted(false);
 		btnNewButton_1_2_4.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_4.setBounds(10, 61, 153, 21);
+		btnNewButton_1_2_4.addActionListener(actionListener);
 		panel_4_2.add(btnNewButton_1_2_4);
 		
 		JButton btnNewButton_1_2_1_2 = new JButton("");
@@ -311,6 +324,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_1_2.setBorderPainted(false);
 		btnNewButton_1_2_1_2.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_1_2.setBounds(10, 82, 153, 21);
+		btnNewButton_1_2_1_2.addActionListener(actionListener);
 		panel_4_2.add(btnNewButton_1_2_1_2);
 		
 		JButton btnNewButton_1_2_2_2 = new JButton("");
@@ -324,6 +338,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_2_2.setBorderPainted(false);
 		btnNewButton_1_2_2_2.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_2_2.setBounds(10, 102, 153, 21);
+		btnNewButton_1_2_2_2.addActionListener(actionListener);
 		panel_4_2.add(btnNewButton_1_2_2_2);
 		
 		JButton BtnEquiparI = new JButton("Equipar");
@@ -338,6 +353,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnEquiparI.setFocusTraversalKeysEnabled(false);
 		BtnEquiparI.setFocusable(false);
 		BtnEquiparI.setBounds(261, 227, 129, 48);
+		BtnEquiparI.addActionListener(actionListener);
 		PanelInventario.add(BtnEquiparI);
 		
 		JButton BtnVender = new JButton("Vender");
@@ -354,6 +370,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnVender.setBounds(261, 319, 129, 48);
 		PanelInventario.add(BtnVender);
 		PanelPrincipal.add(panel_2);
+		BtnVender.addActionListener(actionListener);
 		panel_2.setLayout(null);
 		
 		JLabel lblNewLabel_1 = new JLabel("100");
@@ -427,6 +444,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_5.setBorderPainted(false);
 		btnNewButton_1_5.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_5.setBounds(10, 20, 153, 21);
+		btnNewButton_1_5.addActionListener(actionListener);
 		panel_4_3.add(btnNewButton_1_5);
 		
 		JButton btnNewButton_1_1_3 = new JButton("Daga Siniestra");
@@ -441,6 +459,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_1_3.setBorderPainted(false);
 		btnNewButton_1_1_3.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_1_3.setBounds(10, 41, 153, 21);
+		btnNewButton_1_1_3.addActionListener(actionListener);
 		panel_4_3.add(btnNewButton_1_1_3);
 		
 		JButton btnNewButton_1_2_5 = new JButton("Guante Magico");
@@ -455,6 +474,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_5.setBorderPainted(false);
 		btnNewButton_1_2_5.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_5.setBounds(10, 61, 153, 21);
+		btnNewButton_1_2_5.addActionListener(actionListener);
 		panel_4_3.add(btnNewButton_1_2_5);
 		
 		JButton btnNewButton_1_2_1_3 = new JButton("Lanza Oscura");
@@ -469,6 +489,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_1_3.setBorderPainted(false);
 		btnNewButton_1_2_1_3.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_1_3.setBounds(10, 82, 153, 21);
+		btnNewButton_1_2_1_3.addActionListener(actionListener);
 		panel_4_3.add(btnNewButton_1_2_1_3);
 		
 		JButton btnNewButton_1_2_2_3 = new JButton("Zweihander");
@@ -483,6 +504,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_2_3.setBorderPainted(false);
 		btnNewButton_1_2_2_3.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_2_3.setBounds(10, 102, 153, 21);
+		btnNewButton_1_2_2_3.addActionListener(actionListener);
 		panel_4_3.add(btnNewButton_1_2_2_3);
 		
 		JPanel panel_4_4 = new JPanel();
@@ -504,6 +526,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_6.setBorderPainted(false);
 		btnNewButton_1_6.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_6.setBounds(10, 20, 153, 21);
+		btnNewButton_1_6.addActionListener(actionListener);
 		panel_4_4.add(btnNewButton_1_6);
 		
 		JButton btnNewButton_1_1_4 = new JButton("Chaqueta Pesada");
@@ -518,6 +541,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_1_4.setBorderPainted(false);
 		btnNewButton_1_1_4.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_1_4.setBounds(10, 41, 153, 21);
+		btnNewButton_1_1_4.addActionListener(actionListener);
 		panel_4_4.add(btnNewButton_1_1_4);
 		
 		JButton btnNewButton_1_2_6 = new JButton("Bata Oscura");
@@ -532,6 +556,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_6.setBorderPainted(false);
 		btnNewButton_1_2_6.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_6.setBounds(10, 61, 153, 21);
+		btnNewButton_1_2_6.addActionListener(actionListener);
 		panel_4_4.add(btnNewButton_1_2_6);
 		
 		JButton btnNewButton_1_2_1_4 = new JButton("Capa Angelical");
@@ -546,6 +571,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_1_4.setBorderPainted(false);
 		btnNewButton_1_2_1_4.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_1_4.setBounds(10, 82, 153, 21);
+		btnNewButton_1_2_1_4.addActionListener(actionListener);
 		panel_4_4.add(btnNewButton_1_2_1_4);
 		
 		JButton btnNewButton_1_2_2_4 = new JButton("Placa Paladin");
@@ -560,6 +586,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_2_4.setBorderPainted(false);
 		btnNewButton_1_2_2_4.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_2_4.setBounds(10, 102, 153, 21);
+		btnNewButton_1_2_2_4.addActionListener(actionListener);
 		panel_4_4.add(btnNewButton_1_2_2_4);
 		
 		JPanel panel_4_5 = new JPanel();
@@ -581,6 +608,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_7.setBorderPainted(false);
 		btnNewButton_1_7.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_7.setBounds(10, 20, 153, 21);
+		btnNewButton_1_7.addActionListener(actionListener);
 		panel_4_5.add(btnNewButton_1_7);
 		
 		JButton btnNewButton_1_1_5 = new JButton("Pocion de Mana");
@@ -595,6 +623,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_1_5.setBorderPainted(false);
 		btnNewButton_1_1_5.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_1_5.setBounds(10, 41, 153, 21);
+		btnNewButton_1_1_5.addActionListener(actionListener);
 		panel_4_5.add(btnNewButton_1_1_5);
 		
 		JButton btnNewButton_1_2_7 = new JButton("Gema Reflectora");
@@ -609,6 +638,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_7.setBorderPainted(false);
 		btnNewButton_1_2_7.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_7.setBounds(10, 61, 153, 21);
+		btnNewButton_1_2_7.addActionListener(actionListener);
 		panel_4_5.add(btnNewButton_1_2_7);
 		
 		JButton btnNewButton_1_2_1_5 = new JButton("1-UP");
@@ -623,6 +653,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_1_5.setBorderPainted(false);
 		btnNewButton_1_2_1_5.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_1_5.setBounds(10, 82, 153, 21);
+		btnNewButton_1_2_1_5.addActionListener(actionListener);
 		panel_4_5.add(btnNewButton_1_2_1_5);
 		
 		JButton btnNewButton_1_2_2_5 = new JButton("Restaurador");
@@ -637,6 +668,7 @@ public class GUI extends JFrame implements ActionListener {
 		btnNewButton_1_2_2_5.setBorderPainted(false);
 		btnNewButton_1_2_2_5.setBackground(new Color(0, 51, 0));
 		btnNewButton_1_2_2_5.setBounds(10, 102, 153, 21);
+		btnNewButton_1_2_2_5.addActionListener(actionListener);
 		panel_4_5.add(btnNewButton_1_2_2_5);
 		
 		JButton BtnComprar = new JButton("Comprar");
@@ -651,6 +683,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnComprar.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
 		BtnComprar.setBackground(Color.YELLOW);
 		BtnComprar.setBounds(243, 221, 129, 48);
+		BtnComprar.addActionListener(actionListener);
 		panel_1.add(BtnComprar);
 		
 		JButton btnDescripcion = new JButton("Descripcion");
