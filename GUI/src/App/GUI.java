@@ -30,6 +30,36 @@ public class GUI extends JFrame implements ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel PanelGeneral;
+	private JButton BtnArmaI1;
+	private JButton BtnArmaI2;
+	private JButton BtnArmaI3;
+	private JButton BtnArmaI4;
+	private JButton BtnArmaI5;
+	private JButton BtnArmaduraI1;
+	private JButton BtnArmaduraI2;
+	private JButton BtnArmaduraI3;
+	private JButton BtnArmaduraI4;
+	private JButton BtnArmaduraI5;
+	private JButton BtnConsumibleI1;
+	private JButton BtnConsumibleI2;
+	private JButton BtnConsumibleI3;
+	private JButton BtnConsumibleI4;
+	private JButton BtnConsumibleI5;
+	private JButton BtnArmaT1;
+	private JButton BtnArmaT2;
+	private JButton BtnArmaT3;
+	private JButton BtnArmaT4;
+	private JButton BtnArmaT5;
+	private JButton BtnArmaduraT1;
+	private JButton BtnArmaduraT2;
+	private JButton BtnArmaduraT3;
+	private JButton BtnArmaduraT4;
+	private JButton BtnArmaduraT5;
+	private JButton BtnConsumibleT1;
+	private JButton BtnConsumibleT2;
+	private JButton BtnConsumibleT3;
+	private JButton BtnConsumibleT4;
+	private JButton BtnConsumibleT5;
 
 	/**
 	 * Launch the application.
@@ -53,11 +83,81 @@ public class GUI extends JFrame implements ActionListener {
 	public GUI() {
 		
 		String opcion= "";
-		
+		String OpcionTie= "";
+		String OpcionInv= "";
+
 		ActionListener actionListener = new ActionListener() {
 			public void actionPerformed(ActionEvent describir) {
 				String command = describir.getActionCommand();
-		        System.out.println("Selected: " + command);
+				if (command == "IArma1"){
+					opcion = "IArma1";
+				}else if(command == "IArma2"){
+					opcion = "IArma2";
+				}else if(command == "IArma3"){
+					opcion = "IArma3";
+				}else if(command == "IArma4"){
+					opcion = "IArma4";
+				}else if(command == "IArma5"){
+					opcion = "IArma5";
+				}else if(command == "IArmadura1"){
+					opcion = "IArmadura1";
+				}else if(command == "IArmadura2"){
+					opcion = "IArmadura2";
+				}else if(command == "IArmadura3"){
+					opcion = "IArmadura3";
+				}else if(command == "IArmadura4"){
+					opcion = "IArmadura4";
+				}else if(command == "IArmadura5"){
+					opcion = "IArmadura5";
+				}else if(command == "IConsumible1"){
+					opcion = "IConsumible1";
+				}else if(command == "IConsumible2"){
+					opcion = "IConsumible2";
+				}else if(command == "IConsumible3"){
+					opcion = "IConsumible3";
+				}else if(command == "IConsumible4"){
+					opcion = "IConsumible4";
+				}else if(command == "IConsumible5"){
+					opcion = "IConsumible5";
+				}else if (command == "TArma1"){
+					opcion = "TArma1";
+				}else if(command == "TArma2"){
+					opcion = "TArma2";
+				}else if(command == "TArma3"){
+					opcion = "TArma3";
+				}else if(command == "TArma4"){
+					opcion = "TArma4";
+				}else if(command == "TArma5"){
+					opcion = "TArma5";
+				}else if(command == "TArmadura1"){
+					opcion = "TArmadura1";
+				}else if(command == "TArmadura2"){
+					opcion = "TArmadura2";
+				}else if(command == "TArmadura3"){
+					opcion = "TArmadura3";
+				}else if(command == "TArmadura4"){
+					opcion = "TArmadura4";
+				}else if(command == "TArmadura5"){
+					opcion = "TArmadura5";
+				}else if(command == "TConsumible1"){
+					opcion = "TConsumible1";
+				}else if(command == "TConsumible2"){
+					opcion = "TConsumible2";
+				}else if(command == "TConsumible3"){
+					opcion = "TConsumible3";
+				}else if(command == "TConsumible4"){
+					opcion = "TConsumible4";
+				}else if(command == "TConsumible5"){
+					opcion = "TConsumible5";
+				}else if(command == "Equip" & opcion != ""){
+					opcion = "";//aqui se llama a metodo character para equipar
+				}else if(command == "Sell" & opcion != ""){
+					opcion = "";//aqui se llama a metodo character para vender
+				}else if(command == "Buy" & opcion != ""){
+					opcion = "";//aqui se llama a metodo de tienda para comprar
+				}else if(command == "Descrition" & opcion != ""){
+					opcion = "";//aqui se llama a metodo de tienda para mostrar stats
+				}
 			}
 		};
 		
@@ -117,7 +217,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelInventarioo.add(PanelInvArmas);
 		PanelInvArmas.setLayout(null);
 		
-		JButton BtnArmaI1 = new JButton("");
+		BtnArmaI1 = new JButton("");
 		BtnArmaI1.setActionCommand("IArma1");
 		BtnArmaI1.setBackground(new Color(0, 51, 0));
 		BtnArmaI1.setRequestFocusEnabled(false);
@@ -131,7 +231,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI1.addActionListener(actionListener);
 		PanelInvArmas.add(BtnArmaI1);
 		
-		JButton BtnArmaI2 = new JButton("");
+		BtnArmaI2 = new JButton("");
 		BtnArmaI2.setActionCommand("IArma2");
 		BtnArmaI2.setRequestFocusEnabled(false);
 		BtnArmaI2.setForeground(Color.GREEN);
@@ -145,7 +245,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI2.addActionListener(actionListener);
 		PanelInvArmas.add(BtnArmaI2);
 		
-		JButton BtnArmaI3 = new JButton("");
+		BtnArmaI3 = new JButton("");
 		BtnArmaI3.setActionCommand("IArma3");
 		BtnArmaI3.setRequestFocusEnabled(false);
 		BtnArmaI3.setForeground(Color.GREEN);
@@ -159,7 +259,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI3.addActionListener(actionListener);
 		PanelInvArmas.add(BtnArmaI3);
 		
-		JButton BtnArmaI4 = new JButton("");
+		BtnArmaI4 = new JButton("");
 		BtnArmaI4.setActionCommand("IArma4");
 		BtnArmaI4.setRequestFocusEnabled(false);
 		BtnArmaI4.setForeground(Color.GREEN);
@@ -173,7 +273,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaI4.addActionListener(actionListener);
 		PanelInvArmas.add(BtnArmaI4);
 		
-		JButton BtnArmaI5 = new JButton("");
+		BtnArmaI5 = new JButton("");
 		BtnArmaI5.setActionCommand("IArma5");
 		BtnArmaI5.setBorderPainted(false);
 		BtnArmaI5.setRequestFocusEnabled(false);
@@ -194,7 +294,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelInvArmor.setBounds(236, 52, 173, 140);
 		PanelInventarioo.add(PanelInvArmor);
 		
-		JButton BtnArmaduraI1 = new JButton("");
+		BtnArmaduraI1 = new JButton("");
 		BtnArmaduraI1.setActionCommand("IArmadura1");
 		BtnArmaduraI1.setRequestFocusEnabled(false);
 		BtnArmaduraI1.setForeground(Color.GREEN);
@@ -208,7 +308,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraI1.addActionListener(actionListener);
 		PanelInvArmor.add(BtnArmaduraI1);
 		
-		JButton BtnArmaduraI2 = new JButton("");
+		BtnArmaduraI2 = new JButton("");
 		BtnArmaduraI2.setActionCommand("IArmadura2");
 		BtnArmaduraI2.setRequestFocusEnabled(false);
 		BtnArmaduraI2.setForeground(Color.GREEN);
@@ -222,7 +322,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraI2.addActionListener(actionListener);
 		PanelInvArmor.add(BtnArmaduraI2);
 		
-		JButton BtnArmaduraI3 = new JButton("");
+		BtnArmaduraI3 = new JButton("");
 		BtnArmaduraI3.setActionCommand("IArmadura3");
 		BtnArmaduraI3.setRequestFocusEnabled(false);
 		BtnArmaduraI3.setForeground(Color.GREEN);
@@ -236,7 +336,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraI3.addActionListener(actionListener);
 		PanelInvArmor.add(BtnArmaduraI3);
 		
-		JButton BtnArmaduraI4 = new JButton("");
+		BtnArmaduraI4 = new JButton("");
 		BtnArmaduraI4.setActionCommand("IArmadura4");
 		BtnArmaduraI4.setRequestFocusEnabled(false);
 		BtnArmaduraI4.setForeground(Color.GREEN);
@@ -250,7 +350,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraI4.addActionListener(actionListener);
 		PanelInvArmor.add(BtnArmaduraI4);
 		
-		JButton BtnArmaduraI5 = new JButton("");
+		BtnArmaduraI5 = new JButton("");
 		BtnArmaduraI5.setActionCommand("IArmadura5");
 		BtnArmaduraI5.setRequestFocusEnabled(false);
 		BtnArmaduraI5.setForeground(Color.GREEN);
@@ -271,7 +371,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelInvConsu.setBounds(44, 227, 173, 140);
 		PanelInventarioo.add(PanelInvConsu);
 		
-		JButton BtnConsumibleI1 = new JButton("");
+		BtnConsumibleI1 = new JButton("");
 		BtnConsumibleI1.setActionCommand("IConsumible1");
 		BtnConsumibleI1.setRequestFocusEnabled(false);
 		BtnConsumibleI1.setForeground(Color.GREEN);
@@ -285,7 +385,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleI1.addActionListener(actionListener);
 		PanelInvConsu.add(BtnConsumibleI1);
 		
-		JButton BtnConsumibleI2 = new JButton("");
+		BtnConsumibleI2 = new JButton("");
 		BtnConsumibleI2.setActionCommand("IConsumible2");
 		BtnConsumibleI2.setRequestFocusEnabled(false);
 		BtnConsumibleI2.setForeground(Color.GREEN);
@@ -299,7 +399,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleI2.addActionListener(actionListener);
 		PanelInvConsu.add(BtnConsumibleI2);
 		
-		JButton BtnConsumibleI3 = new JButton("");
+		BtnConsumibleI3 = new JButton("");
 		BtnConsumibleI3.setActionCommand("IConsumible3");
 		BtnConsumibleI3.setRequestFocusEnabled(false);
 		BtnConsumibleI3.setForeground(Color.GREEN);
@@ -313,7 +413,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleI3.addActionListener(actionListener);
 		PanelInvConsu.add(BtnConsumibleI3);
 		
-		JButton BtnConsumibleI4 = new JButton("");
+		BtnConsumibleI4 = new JButton("");
 		BtnConsumibleI4.setActionCommand("IConsumible4");
 		BtnConsumibleI4.setRequestFocusEnabled(false);
 		BtnConsumibleI4.setForeground(Color.GREEN);
@@ -327,7 +427,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleI4.addActionListener(actionListener);
 		PanelInvConsu.add(BtnConsumibleI4);
 		
-		JButton BtnConsumibleI5 = new JButton("");
+		BtnConsumibleI5 = new JButton("");
 		BtnConsumibleI5.setActionCommand("IConsumible5");
 		BtnConsumibleI5.setRequestFocusEnabled(false);
 		BtnConsumibleI5.setForeground(Color.GREEN);
@@ -432,7 +532,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTieArmas.setBounds(35, 51, 173, 140);
 		PanelTienda.add(PanelTieArmas);
 		
-		JButton BtnArmaT1 = new JButton("Bate de Metal");
+		BtnArmaT1 = new JButton("Bate de Metal");
 		BtnArmaT1.setActionCommand("TArma1");
 		BtnArmaT1.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaT1.setRequestFocusEnabled(false);
@@ -447,7 +547,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaT1.addActionListener(actionListener);
 		PanelTieArmas.add(BtnArmaT1);
 		
-		JButton BtnArmaT2 = new JButton("Daga Siniestra");
+		BtnArmaT2 = new JButton("Daga Siniestra");
 		BtnArmaT2.setActionCommand("TArma2");
 		BtnArmaT2.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaT2.setRequestFocusEnabled(false);
@@ -462,7 +562,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaT2.addActionListener(actionListener);
 		PanelTieArmas.add(BtnArmaT2);
 		
-		JButton BtnArmaT3 = new JButton("Guante Magico");
+		BtnArmaT3 = new JButton("Guante Magico");
 		BtnArmaT3.setActionCommand("TArma3");
 		BtnArmaT3.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaT3.setRequestFocusEnabled(false);
@@ -477,7 +577,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaT3.addActionListener(actionListener);
 		PanelTieArmas.add(BtnArmaT3);
 		
-		JButton BtnArmaT4 = new JButton("Lanza Oscura");
+		BtnArmaT4 = new JButton("Lanza Oscura");
 		BtnArmaT4.setActionCommand("TArma4");
 		BtnArmaT4.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaT4.setRequestFocusEnabled(false);
@@ -492,7 +592,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaT4.addActionListener(actionListener);
 		PanelTieArmas.add(BtnArmaT4);
 		
-		JButton BtnArmaT5 = new JButton("Zweihander");
+		BtnArmaT5 = new JButton("Zweihander");
 		BtnArmaT5.setActionCommand("TArma5");
 		BtnArmaT5.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaT5.setRequestFocusEnabled(false);
@@ -514,7 +614,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTieArmor.setBounds(221, 51, 173, 140);
 		PanelTienda.add(PanelTieArmor);
 		
-		JButton BtnArmaduraT1 = new JButton("Cadenas");
+		BtnArmaduraT1 = new JButton("Cadenas");
 		BtnArmaduraT1.setActionCommand("TArmadura1");
 		BtnArmaduraT1.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT1.setRequestFocusEnabled(false);
@@ -529,7 +629,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraT1.addActionListener(actionListener);
 		PanelTieArmor.add(BtnArmaduraT1);
 		
-		JButton BtnArmaduraT2 = new JButton("Chaqueta Pesada");
+		BtnArmaduraT2 = new JButton("Chaqueta Pesada");
 		BtnArmaduraT2.setActionCommand("TArmadura2");
 		BtnArmaduraT2.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT2.setRequestFocusEnabled(false);
@@ -544,7 +644,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraT2.addActionListener(actionListener);
 		PanelTieArmor.add(BtnArmaduraT2);
 		
-		JButton BtnArmaduraT3 = new JButton("Bata Oscura");
+		BtnArmaduraT3 = new JButton("Bata Oscura");
 		BtnArmaduraT3.setActionCommand("TArmadura3");
 		BtnArmaduraT3.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT3.setRequestFocusEnabled(false);
@@ -559,7 +659,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraT3.addActionListener(actionListener);
 		PanelTieArmor.add(BtnArmaduraT3);
 		
-		JButton BtnArmaduraT4 = new JButton("Capa Angelical");
+		BtnArmaduraT4 = new JButton("Capa Angelical");
 		BtnArmaduraT4.setActionCommand("TArmadura4");
 		BtnArmaduraT4.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT4.setRequestFocusEnabled(false);
@@ -574,7 +674,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnArmaduraT4.addActionListener(actionListener);
 		PanelTieArmor.add(BtnArmaduraT4);
 		
-		JButton BtnArmaduraT5 = new JButton("Placa Paladin");
+		BtnArmaduraT5 = new JButton("Placa Paladin");
 		BtnArmaduraT5.setActionCommand("TArmadura5");
 		BtnArmaduraT5.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT5.setRequestFocusEnabled(false);
@@ -596,7 +696,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTieConsu.setBounds(35, 225, 173, 140);
 		PanelTienda.add(PanelTieConsu);
 		
-		JButton BtnConsumibleT1 = new JButton("Medicina");
+		BtnConsumibleT1 = new JButton("Medicina");
 		BtnConsumibleT1.setActionCommand("TConsumible1");
 		BtnConsumibleT1.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnConsumibleT1.setRequestFocusEnabled(false);
@@ -611,7 +711,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleT1.addActionListener(actionListener);
 		PanelTieConsu.add(BtnConsumibleT1);
 		
-		JButton BtnConsumibleT2 = new JButton("Pocion de Mana");
+		BtnConsumibleT2 = new JButton("Pocion de Mana");
 		BtnConsumibleT2.setActionCommand("TConsumible2");
 		BtnConsumibleT2.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnConsumibleT2.setRequestFocusEnabled(false);
@@ -626,7 +726,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleT2.addActionListener(actionListener);
 		PanelTieConsu.add(BtnConsumibleT2);
 		
-		JButton BtnConsumibleT3 = new JButton("Gema Reflectora");
+		BtnConsumibleT3 = new JButton("Gema Reflectora");
 		BtnConsumibleT3.setActionCommand("TConsumible3");
 		BtnConsumibleT3.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnConsumibleT3.setRequestFocusEnabled(false);
@@ -641,7 +741,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleT3.addActionListener(actionListener);
 		PanelTieConsu.add(BtnConsumibleT3);
 		
-		JButton BtnConsumibleT4 = new JButton("1-UP");
+		BtnConsumibleT4 = new JButton("1-UP");
 		BtnConsumibleT4.setActionCommand("TConsumible4");
 		BtnConsumibleT4.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnConsumibleT4.setRequestFocusEnabled(false);
@@ -656,7 +756,7 @@ public class GUI extends JFrame implements ActionListener {
 		BtnConsumibleT4.addActionListener(actionListener);
 		PanelTieConsu.add(BtnConsumibleT4);
 		
-		JButton BtnConsumibleT5 = new JButton("Restaurador");
+		BtnConsumibleT5 = new JButton("Restaurador");
 		BtnConsumibleT5.setActionCommand("TConsumible5");
 		BtnConsumibleT5.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnConsumibleT5.setRequestFocusEnabled(false);

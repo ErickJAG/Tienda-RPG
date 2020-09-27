@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Character {
@@ -23,8 +24,8 @@ public class Character {
         personaje.Defensa= 5;
         personaje.Velocidad= 5;
     }
-    List<Armadura> inventarioDArmaduras = new ArrayList<>();
-    List<Armas> inventarioArmas = new ArrayList<>();
-    List<Consumibles> inventarioConsumibles = new ArrayList<>();
+    List<Integer> inventarioDArmaduras = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    List<Integer> inventarioArmas = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
 
 }
