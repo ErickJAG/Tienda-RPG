@@ -60,7 +60,8 @@ public class GUI extends JFrame implements ActionListener {
 	private JButton BtnConsumibleT3;
 	private JButton BtnConsumibleT4;
 	private JButton BtnConsumibleT5;
-
+	private String OpcionTie= "";
+	private String OpcionInv= "";
 	/**
 	 * Launch the application.
 	 */
@@ -81,82 +82,78 @@ public class GUI extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public GUI() {
-		
-		String opcion= "";
-		String OpcionTie= "";
-		String OpcionInv= "";
-
 		ActionListener actionListener = new ActionListener() {
-			public void actionPerformed(ActionEvent describir) {
+			public void actionPerformed(ActionEvent describir) {	
 				String command = describir.getActionCommand();
 				if (command == "IArma1"){
-					opcion = "IArma1";
+					OpcionInv = BtnArmaI1.getText();
 				}else if(command == "IArma2"){
-					opcion = "IArma2";
+					OpcionInv = BtnArmaI2.getText();
 				}else if(command == "IArma3"){
-					opcion = "IArma3";
+					OpcionInv = BtnArmaI3.getText();
 				}else if(command == "IArma4"){
-					opcion = "IArma4";
+					OpcionInv = BtnArmaI4.getText();
 				}else if(command == "IArma5"){
-					opcion = "IArma5";
+					OpcionInv = BtnArmaI5.getText();
 				}else if(command == "IArmadura1"){
-					opcion = "IArmadura1";
+					OpcionInv = BtnArmaduraI1.getText();
 				}else if(command == "IArmadura2"){
-					opcion = "IArmadura2";
+					OpcionInv =  BtnArmaduraI2.getText();
 				}else if(command == "IArmadura3"){
-					opcion = "IArmadura3";
+					OpcionInv =  BtnArmaduraI3.getText();
 				}else if(command == "IArmadura4"){
-					opcion = "IArmadura4";
+					OpcionInv =  BtnArmaduraI4.getText();
 				}else if(command == "IArmadura5"){
-					opcion = "IArmadura5";
+					OpcionInv =  BtnArmaduraI5.getText();
 				}else if(command == "IConsumible1"){
-					opcion = "IConsumible1";
+					OpcionInv = BtnConsumibleI2.getText();
 				}else if(command == "IConsumible2"){
-					opcion = "IConsumible2";
+					OpcionInv = BtnConsumibleI2.getText();
 				}else if(command == "IConsumible3"){
-					opcion = "IConsumible3";
+					OpcionInv = BtnConsumibleI3.getText();
 				}else if(command == "IConsumible4"){
-					opcion = "IConsumible4";
+					OpcionInv = BtnConsumibleI4.getText();
 				}else if(command == "IConsumible5"){
-					opcion = "IConsumible5";
+					OpcionInv = BtnConsumibleI5.getText();
 				}else if (command == "TArma1"){
-					opcion = "TArma1";
+					OpcionTie = BtnArmaT1.getText();
 				}else if(command == "TArma2"){
-					opcion = "TArma2";
+					OpcionTie = BtnArmaT2.getText();
 				}else if(command == "TArma3"){
-					opcion = "TArma3";
+					OpcionTie = BtnArmaT3.getText();
 				}else if(command == "TArma4"){
-					opcion = "TArma4";
+					OpcionTie = BtnArmaT4.getText();
 				}else if(command == "TArma5"){
-					opcion = "TArma5";
+					OpcionTie = BtnArmaT5.getText();
 				}else if(command == "TArmadura1"){
-					opcion = "TArmadura1";
+					OpcionTie = BtnArmaduraT1.getText();
 				}else if(command == "TArmadura2"){
-					opcion = "TArmadura2";
+					OpcionTie =  BtnArmaduraT2.getText();
 				}else if(command == "TArmadura3"){
-					opcion = "TArmadura3";
+					OpcionTie =  BtnArmaduraT3.getText();
 				}else if(command == "TArmadura4"){
-					opcion = "TArmadura4";
+					OpcionTie =  BtnArmaduraT4.getText();
 				}else if(command == "TArmadura5"){
-					opcion = "TArmadura5";
+					OpcionTie =  BtnArmaduraT5.getText();
 				}else if(command == "TConsumible1"){
-					opcion = "TConsumible1";
+					OpcionTie = BtnConsumibleT2.getText();
 				}else if(command == "TConsumible2"){
-					opcion = "TConsumible2";
+					OpcionTie = BtnConsumibleT2.getText();
 				}else if(command == "TConsumible3"){
-					opcion = "TConsumible3";
+					OpcionTie = BtnConsumibleT3.getText();
 				}else if(command == "TConsumible4"){
-					opcion = "TConsumible4";
+					OpcionTie = BtnConsumibleT4.getText();
 				}else if(command == "TConsumible5"){
-					opcion = "TConsumible5";
-				}else if(command == "Equip" & opcion != ""){
-					opcion = "";//aqui se llama a metodo character para equipar
-				}else if(command == "Sell" & opcion != ""){
-					opcion = "";//aqui se llama a metodo character para vender
-				}else if(command == "Buy" & opcion != ""){
-					opcion = "";//aqui se llama a metodo de tienda para comprar
-				}else if(command == "Descrition" & opcion != ""){
-					opcion = "";//aqui se llama a metodo de tienda para mostrar stats
+					OpcionTie = BtnConsumibleT5.getText();
+				}else if(command == "Equip" & ! OpcionInv.equals("")){
+					OpcionInv = "";//aqui se llama a metodo character para equipar
+				}else if(command == "Sell" & ! OpcionInv.equals("")){
+					OpcionInv = "";//aqui se llama a metodo character para vender
+				}else if(command.equals("Buy") & ! OpcionTie.equals("")){
+					Character.comprar(OpcionTie);
+					OpcionTie = "";//aqui se llama a metodo de tienda para comprar
+				}else if(command == "Descrition" & ! OpcionTie.equals("")){
+					OpcionTie = "";//aqui se llama a metodo de tienda para mostrar stats
 				}
 			}
 		};
@@ -488,7 +485,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelStats.add(StatDfs);
 		
 		JLabel StatMna = new JLabel("100");
-		StatMna.setIcon(new ImageIcon("C:\\Users\\eastorga\\eclipse-workspace\\Pruebas Projecto\\src\\App\\Mana Indicator.png"));
+		StatMna.setIcon(new ImageIcon(GUI.class.getResource("/App/Mana Indicator.png")));
 		StatMna.setForeground(new Color(102, 102, 255));
 		StatMna.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatMna.setBounds(167, 24, 89, 35);
