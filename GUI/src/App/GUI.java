@@ -87,64 +87,544 @@ public class GUI extends JFrame implements ActionListener {
 				String command = describir.getActionCommand();
 				if (command == "IArma1"){
 					OpcionInv = BtnArmaI1.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(102, 0, 255));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArma2"){
 					OpcionInv = BtnArmaI2.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(102, 0, 255));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArma3"){
 					OpcionInv = BtnArmaI3.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(102, 0, 255));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArma4"){
 					OpcionInv = BtnArmaI4.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(102, 0, 255));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArma5"){
 					OpcionInv = BtnArmaI5.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(102, 0, 255));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArmadura1"){
 					OpcionInv = BtnArmaduraI1.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(102, 0, 255));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArmadura2"){
 					OpcionInv =  BtnArmaduraI2.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(102, 0, 255));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArmadura3"){
 					OpcionInv =  BtnArmaduraI3.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(102, 0, 255));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArmadura4"){
 					OpcionInv =  BtnArmaduraI4.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(102, 0, 255));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IArmadura5"){
 					OpcionInv =  BtnArmaduraI5.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(102, 0, 255));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IConsumible1"){
 					OpcionInv = BtnConsumibleI2.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(102, 0, 255));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IConsumible2"){
 					OpcionInv = BtnConsumibleI2.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(102, 0, 255));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IConsumible3"){
 					OpcionInv = BtnConsumibleI3.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(102, 0, 255));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IConsumible4"){
 					OpcionInv = BtnConsumibleI4.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(102, 0, 255));
+						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+					}
 				}else if(command == "IConsumible5"){
 					OpcionInv = BtnConsumibleI5.getText();
+					if(!OpcionInv.equals("")) {
+						BtnArmaI1.setBackground(new Color(0, 51, 0));
+						BtnArmaI2.setBackground(new Color(0, 51, 0));
+						BtnArmaI3.setBackground(new Color(0, 51, 0));
+						BtnArmaI4.setBackground(new Color(0, 51, 0));
+						BtnArmaI5.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+						BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+						BtnConsumibleI5.setBackground(new Color(102, 0, 255));
+					}
 				}else if (command == "TArma1"){
 					OpcionTie = BtnArmaT1.getText();
+					BtnArmaT1.setBackground(new Color(102, 0, 255));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArma2"){
 					OpcionTie = BtnArmaT2.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(102, 0, 255));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(102, 0, 255));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArma4"){
 					OpcionTie = BtnArmaT4.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(102, 0, 255));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArma5"){
 					OpcionTie = BtnArmaT5.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(102, 0, 255));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArmadura1"){
 					OpcionTie = BtnArmaduraT1.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(102, 0, 255));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArmadura2"){
 					OpcionTie =  BtnArmaduraT2.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(102, 0, 255));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(102, 0, 255));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArmadura4"){
 					OpcionTie =  BtnArmaduraT4.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(102, 0, 255));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TArmadura5"){
 					OpcionTie =  BtnArmaduraT5.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(102, 0, 255));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible1"){
 					OpcionTie = BtnConsumibleT2.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(102, 0, 255));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible2"){
 					OpcionTie = BtnConsumibleT2.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(102, 0, 255));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible3"){
 					OpcionTie = BtnConsumibleT3.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(102, 0, 255));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible4"){
 					OpcionTie = BtnConsumibleT4.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(102, 0, 255));
+					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible5"){
 					OpcionTie = BtnConsumibleT5.getText();
+					BtnArmaT1.setBackground(new Color(0, 51, 0));
+					BtnArmaT2.setBackground(new Color(0, 51, 0));
+					BtnArmaT3.setBackground(new Color(0, 51, 0));
+					BtnArmaT4.setBackground(new Color(0, 51, 0));
+					BtnArmaT5.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT1.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT2.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT3.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT4.setBackground(new Color(0, 51, 0));
+					BtnArmaduraT5.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT1.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT2.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
+					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					OpcionInv = "";//aqui se llama a metodo character para equipar
 				}else if(command == "Sell" & ! OpcionInv.equals("")){
