@@ -11,7 +11,13 @@ public class Character {
     public int Magia;
     public int Defensa;
     public int Velocidad;
-    
+    List<Integer> inventarioDArmaduras = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    List<Integer> inventarioArmas = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    //metodo de compra
+    public static void comprar(String opcion) {
+        
+    }
     //Metodo para definir los atributos de los objetos
     public static void main(final String[] args) {
         //Objeto
@@ -24,8 +30,6 @@ public class Character {
         personaje.Defensa= 5;
         personaje.Velocidad= 5;
     }
-    List<Integer> inventarioDArmaduras = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
-    List<Integer> inventarioArmas = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
-    List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
+    
 
 }
