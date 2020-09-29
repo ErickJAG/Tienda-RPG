@@ -18,7 +18,9 @@ public class Character {
     List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
     //metodo de compra
     public static void comprar(String opcion) {
-    	System.out.println(opcion);
+        if (opcion.equals("Bate de Metal")){
+            GUI.cambiaText(opcion);
+        }
     }
     //Metodo para definir los atributos de los objetos
     public static void main(final String[] args) {

@@ -76,6 +76,7 @@ public class GUI extends JFrame implements ActionListener {
 				}
 			}
 		});
+		
 	}
 
 	/**
@@ -1297,6 +1298,9 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTienda.add(LogoTienda);
 		PanelGeneral.add(PanelDesc);
 		PanelDesc.setLayout(null);
+		
+		 
+					
 	}
 
 	@Override
@@ -1305,7 +1309,9 @@ public class GUI extends JFrame implements ActionListener {
 		
 	}
 
-	
+	public static void cambiaText(String texto) {
+		BtnArmaI1.setText(texto);
+	}
 		
 	
 }
