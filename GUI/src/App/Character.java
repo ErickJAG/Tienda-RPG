@@ -10,7 +10,7 @@ public class Character {
     public int Dinero;
     public int Vida;
     public int Ataque;
-    public int Magia;
+    public int Mana;
     public int Defensa;
     public int Velocidad;
     List<Integer> inventarioDArmaduras = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
@@ -25,12 +25,7 @@ public class Character {
         //Objeto
         Character personaje = new Character();
         //Definicions de atributos
-        personaje.Ataque= 5;
-        personaje.Vida= 5;
-        personaje.Dinero= 5000;
-        personaje.Magia= 5;
-        personaje.Defensa= 5;
-        personaje.Velocidad= 5;
+        
     }
     
 

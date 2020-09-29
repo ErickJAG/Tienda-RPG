@@ -30,36 +30,36 @@ public class GUI extends JFrame implements ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel PanelGeneral;
-	private JButton BtnArmaI1;
-	private JButton BtnArmaI2;
-	private JButton BtnArmaI3;
-	private JButton BtnArmaI4;
-	private JButton BtnArmaI5;
-	private JButton BtnArmaduraI1;
-	private JButton BtnArmaduraI2;
-	private JButton BtnArmaduraI3;
-	private JButton BtnArmaduraI4;
-	private JButton BtnArmaduraI5;
-	private JButton BtnConsumibleI1;
-	private JButton BtnConsumibleI2;
-	private JButton BtnConsumibleI3;
-	private JButton BtnConsumibleI4;
-	private JButton BtnConsumibleI5;
-	private JButton BtnArmaT1;
-	private JButton BtnArmaT2;
-	private JButton BtnArmaT3;
-	private JButton BtnArmaT4;
-	private JButton BtnArmaT5;
-	private JButton BtnArmaduraT1;
-	private JButton BtnArmaduraT2;
-	private JButton BtnArmaduraT3;
-	private JButton BtnArmaduraT4;
-	private JButton BtnArmaduraT5;
-	private JButton BtnConsumibleT1;
-	private JButton BtnConsumibleT2;
-	private JButton BtnConsumibleT3;
-	private JButton BtnConsumibleT4;
-	private JButton BtnConsumibleT5;
+	public static JButton BtnArmaI1;
+	public static JButton BtnArmaI2;
+	public static JButton BtnArmaI3;
+	public static JButton BtnArmaI4;
+	public static JButton BtnArmaI5;
+	public static JButton BtnArmaduraI1;
+	public static JButton BtnArmaduraI2;
+	public static JButton BtnArmaduraI3;
+	public static JButton BtnArmaduraI4;
+	public static JButton BtnArmaduraI5;
+	public static JButton BtnConsumibleI1;
+	public static JButton BtnConsumibleI2;
+	public static JButton BtnConsumibleI3;
+	public static JButton BtnConsumibleI4;
+	public static JButton BtnConsumibleI5;
+	public static JButton BtnArmaT1;
+	public static JButton BtnArmaT2;
+	public static JButton BtnArmaT3;
+	public static JButton BtnArmaT4;
+	public static JButton BtnArmaT5;
+	public static JButton BtnArmaduraT1;
+	public static JButton BtnArmaduraT2;
+	public static JButton BtnArmaduraT3;
+	public static JButton BtnArmaduraT4;
+	public static JButton BtnArmaduraT5;
+	public static JButton BtnConsumibleT1;
+	public static JButton BtnConsumibleT2;
+	public static JButton BtnConsumibleT3;
+	public static JButton BtnConsumibleT4;
+	public static JButton BtnConsumibleT5;
 	private String OpcionTie= "";
 	private String OpcionInv= "";
 	/**
@@ -82,6 +82,13 @@ public class GUI extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public GUI() {
+		Character personaje = new Character();
+		personaje.Ataque= 10;
+        personaje.Vida= 100;
+        personaje.Dinero= 5000;
+        personaje.Mana= 15;
+        personaje.Defensa= 25;
+        personaje.Velocidad= 125;
 		ActionListener actionListener = new ActionListener() {
 			public void actionPerformed(ActionEvent describir) {	
 				String command = describir.getActionCommand();
@@ -314,8 +321,8 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 					}
 				}else if(command == "IConsumible3"){
-					OpcionInv = BtnConsumibleI3.getText();
 					if(!OpcionInv.equals("")) {
+						OpcionInv = BtnConsumibleI3.getText();
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -950,42 +957,48 @@ public class GUI extends JFrame implements ActionListener {
 		BtnVender.addActionListener(actionListener);
 		PanelStats.setLayout(null);
 		
-		JLabel StatAtk = new JLabel("100");
+		JLabel StatAtk = new JLabel();
+		StatAtk.setText(String.valueOf(personaje.Ataque));
 		StatAtk.setIcon(new ImageIcon(GUI.class.getResource("/App/Attack Indicator.png")));
 		StatAtk.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatAtk.setForeground(Color.RED);
 		StatAtk.setBounds(59, 24, 89, 35);
 		PanelStats.add(StatAtk);
 		
-		JLabel StatDfs = new JLabel("100");
+		JLabel StatDfs = new JLabel();
+		StatDfs.setText(String.valueOf(personaje.Defensa));
 		StatDfs.setIcon(new ImageIcon(GUI.class.getResource("/App/Defense Indicator.png")));
 		StatDfs.setForeground(Color.MAGENTA);
 		StatDfs.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatDfs.setBounds(59, 69, 89, 35);
 		PanelStats.add(StatDfs);
 		
-		JLabel StatMna = new JLabel("100");
+		JLabel StatMna = new JLabel();
+		StatMna.setText(String.valueOf(personaje.Mana));
 		StatMna.setIcon(new ImageIcon(GUI.class.getResource("/App/Mana Indicator.png")));
 		StatMna.setForeground(new Color(102, 102, 255));
 		StatMna.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatMna.setBounds(167, 24, 89, 35);
 		PanelStats.add(StatMna);
 		
-		JLabel StatSpd = new JLabel("100");
+		JLabel StatSpd = new JLabel();
+		StatSpd.setText(String.valueOf(personaje.Velocidad));
 		StatSpd.setIcon(new ImageIcon(GUI.class.getResource("/App/Speed Indicator.png")));
 		StatSpd.setForeground(Color.CYAN);
 		StatSpd.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatSpd.setBounds(167, 69, 89, 35);
 		PanelStats.add(StatSpd);
 		
-		JLabel StatHlth = new JLabel("100");
+		JLabel StatHlth = new JLabel();
+		StatHlth.setText(String.valueOf(personaje.Vida));
 		StatHlth.setIcon(new ImageIcon(GUI.class.getResource("/App/Health Indicator.png")));
 		StatHlth.setForeground(new Color(255, 153, 255));
 		StatHlth.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatHlth.setBounds(279, 24, 89, 35);
 		PanelStats.add(StatHlth);
 		
-		JLabel StatMny = new JLabel("100");
+		JLabel StatMny = new JLabel();
+		StatMny.setText(String.valueOf(personaje.Dinero));
 		StatMny.setIcon(new ImageIcon(GUI.class.getResource("/App/Money Indicator.png")));
 		StatMny.setForeground(new Color(255, 255, 0));
 		StatMny.setFont(new Font("Tahoma", Font.PLAIN, 15));
