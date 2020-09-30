@@ -549,7 +549,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 				}else if(command == "TConsumible1"){
-					OpcionTie = BtnConsumibleT2.getText();
+					OpcionTie = BtnConsumibleT1.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
 					BtnArmaT2.setBackground(new Color(0, 51, 0));
 					BtnArmaT3.setBackground(new Color(0, 51, 0));
@@ -635,11 +635,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					OpcionInv = "";//aqui se llama a metodo character para equipar
-				}else if(command == "Sell" & ! OpcionInv.equals("")){
-					OpcionInv = "";//aqui se llama a metodo character para vender
+				}else if(command == "Sell" & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
 				}else if(command.equals("Buy") & ! OpcionTie.equals("")){
-					Character.comprar(OpcionTie);
-					OpcionTie = "";//aqui se llama a metodo de tienda para comprar
+					Character.comprar(OpcionTie);//aqui se llama a metodo de tienda para comprar
 				}else if(command == "Descrition" & ! OpcionTie.equals("")){
 					OpcionTie = "";//aqui se llama a metodo de tienda para mostrar stats
 				}
@@ -1340,8 +1338,6 @@ public class GUI extends JFrame implements ActionListener {
 			BtnConsumibleI4.setText(texto);
 		}else if(num.equals("15")){
 			BtnConsumibleI5.setText(texto);
-		}else if(num.equals("16")){
-			BtnArmaI1.setText(BtnConsumibleI5.getText()+" "+texto);
 		}
 	}
 		
