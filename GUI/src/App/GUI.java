@@ -1309,8 +1309,40 @@ public class GUI extends JFrame implements ActionListener {
 		
 	}
 
-	public static void cambiaText(String texto) {
+	public static void cambiaText(String texto,String num) {
+		if (num.equals("1")){
 		BtnArmaI1.setText(texto);
+		}else if(num.equals("2")){
+			BtnArmaI2.setText(texto);
+		}else if(num.equals("3")){
+			BtnArmaI3.setText(texto);
+		}else if(num.equals("4")){
+			BtnArmaI4.setText(texto);
+		}else if(num.equals("5")){
+			BtnArmaI5.setText(texto);
+		}else if (num.equals("6")){
+			BtnArmaduraI1.setText(texto);
+		}else if(num.equals("7")){
+			BtnArmaduraI2.setText(texto);
+		}else if(num.equals("8")){
+			BtnArmaduraI3.setText(texto);
+		}else if(num.equals("9")){
+			BtnArmaduraI4.setText(texto);
+		}else if(num.equals("10")){
+			BtnArmaduraI5.setText(texto);
+		}else if (num.equals("11")){
+			BtnConsumibleI1.setText(texto);
+		}else if(num.equals("12")){
+			BtnConsumibleI2.setText(texto);
+		}else if(num.equals("13")){
+			BtnConsumibleI3.setText(texto);
+		}else if(num.equals("14")){
+			BtnConsumibleI4.setText(texto);
+		}else if(num.equals("15")){
+			BtnConsumibleI5.setText(texto);
+		}else if(num.equals("16")){
+			BtnArmaI1.setText(BtnConsumibleI5.getText()+" "+texto);
+		}
 	}
 		
 	
