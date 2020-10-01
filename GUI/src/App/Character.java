@@ -34,7 +34,7 @@ public class Character {
         }else if(opcion.equals("Zweihander")){
         	inventarioArmas.set(4, inventarioArmas.get(4) + 1);
             GUI.cambiaText(opcion+" x"+inventarioArmas.get(4),"5");
-        }else if (opcion.equals("Cadenas")){
+        }else if (opcion.equals("Cota de malla")){
         	inventarioDArmaduras.set(0, inventarioDArmaduras.get(0) + 1);
             GUI.cambiaText(opcion+" x"+inventarioDArmaduras.get(0),"6");
         }else if(opcion.equals("Chaqueta Pesada")){
@@ -66,6 +66,7 @@ public class Character {
             GUI.cambiaText(opcion+" x"+inventarioConsumibles.get(4),"15");
         }
     }
+    //metodo de vender
     public static void vender(String opcion) {
         if (opcion.equals("IArma1")) {
         	if (!inventarioArmas.get(0).equals(0)) {
@@ -124,7 +125,7 @@ public class Character {
         			GUI.cambiaText("", "6");
         		}
         		else {
-        			GUI.cambiaText("Cadenas"+" x"+inventarioArmas.get(0), "6");
+        			GUI.cambiaText("Cota de malla"+" x"+inventarioDArmaduras.get(0), "6");
         		}
         	}
         }else if(opcion.equals("IArmadura2")){
@@ -134,7 +135,7 @@ public class Character {
         			GUI.cambiaText("", "7");
         		}
         		else {
-        			GUI.cambiaText("Chaqueta Pesada"+" x"+inventarioArmas.get(1), "7");
+        			GUI.cambiaText("Chaqueta Pesada"+" x"+inventarioDArmaduras.get(1), "7");
         		}
         	}
         }else if(opcion.equals("IArmadura3")){
@@ -144,7 +145,7 @@ public class Character {
         			GUI.cambiaText("", "8");
         		}
         		else {
-        			GUI.cambiaText("Bata Oscura"+" x"+inventarioArmas.get(2), "8");
+        			GUI.cambiaText("Bata Oscura"+" x"+inventarioDArmaduras.get(2), "8");
         		}
         	}
         }else if(opcion.equals("IArmadura4")){
@@ -154,7 +155,7 @@ public class Character {
         			GUI.cambiaText("", "9");
         		}
         		else {
-        			GUI.cambiaText("Capa Angelical"+" x"+inventarioArmas.get(3), "9");
+        			GUI.cambiaText("Capa Angelical"+" x"+inventarioDArmaduras.get(3), "9");
         		}
         	}
         }else if(opcion.equals("IArmadura5")){
@@ -164,7 +165,7 @@ public class Character {
         			GUI.cambiaText("", "10");
         		}
         		else {
-        			GUI.cambiaText("Placa Paladin"+" x"+inventarioArmas.get(4), "10");
+        			GUI.cambiaText("Placa Paladin"+" x"+inventarioDArmaduras.get(4), "10");
         		}
         	}
         }else if(opcion.equals("IConsumible1")){

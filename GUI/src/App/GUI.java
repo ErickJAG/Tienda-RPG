@@ -60,6 +60,7 @@ public class GUI extends JFrame implements ActionListener {
 	public static JButton BtnConsumibleT3;
 	public static JButton BtnConsumibleT4;
 	public static JButton BtnConsumibleT5;
+	public static JLabel Descripcion;
 	private static String OpcionTie= "";
 	private static String OpcionInv= "";
 	/**
@@ -111,6 +112,7 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnArmaI1.getActionCommand();
+						
 					}
 				}else if(command == "IArma2"){
 					if(!(BtnArmaI2.getText()).equals("")) {
@@ -395,6 +397,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Bate de Metal<br/>Es un bate... pero de metal :3<br/>No es ligero pero tampoco pesado<html>");
 				}else if(command == "TArma2"){
 					OpcionTie = BtnArmaT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -412,6 +415,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Daga Siniestra<br/>Una daga muy misteriosa<br/>No sabes por que pero el usarla<br/>otorga gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -429,6 +433,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Guante Magico<br/>Un guante que por si<br/>solo no es muy fuerte<br/>Pero su poder magico<br/>boostea el poder de tus hechizos<html>");
 				}else if(command == "TArma4"){
 					OpcionTie = BtnArmaT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -446,6 +451,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Lanza Oscura<br/>Un arma de alto poder que conlleva<br/>un precio a pagar<br/>Su poder oscuro te baja tus puntos base<br/>pero tiene mucho poder a cambio<html>");
+					
 				}else if(command == "TArma5"){
 					OpcionTie = BtnArmaT5.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -463,6 +470,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Zweinhander<br/>Gran espadon de doble filo<br/>y formidable poder<br/>Es increiblemente pesada<br/>no recomendable llevar una maraton :p<html>");
 				}else if(command == "TArmadura1"){
 					OpcionTie = BtnArmaduraT1.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -480,6 +488,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Cota de Malla<br/>No creo que sea tan segura<br/>parece cortado de una reja<html>");
 				}else if(command == "TArmadura2"){
 					OpcionTie =  BtnArmaduraT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -497,6 +506,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Chaqueta Pesada<br/> Chaqueta con alto peso y gran<br/>poder para absorber daño<br/>Mucho cuidado con la insolacion");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -514,6 +524,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Bata Oscura<br/>Esta bata absorbe tu energia vital<br/>a cambio de mayor defensa y magia<br/>Feels good to be a bad guy >:3<html>");
 				}else if(command == "TArmadura4"){
 					OpcionTie =  BtnArmaduraT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -531,6 +542,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Capa Angelical<br/>Una capa forgada por los angeles que otorga mucha <br/>defensa y vida a cambio de menor ataque<br/>Perfecta si eres un healer main<html>");
 				}else if(command == "TArmadura5"){
 					OpcionTie =  BtnArmaduraT5.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -548,6 +560,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Placa Paladin<br/>Muro impenetrable de la fe<br/> pero al igual que un muro no te puedes mover<html>");
 				}else if(command == "TConsumible1"){
 					OpcionTie = BtnConsumibleT1.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -565,6 +578,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Medicina<br/>Item basico de cualquier aventurero<br/>Recupera 50HP<br/>Por alguna razon sabe<br/>a menta... usalas bien<html>");
 				}else if(command == "TConsumible2"){
 					OpcionTie = BtnConsumibleT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -582,6 +596,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Pocion de Mana<br/>Al igual que la medicina esta<br/>recupera 50MP<br/>Por alguna razon tiene sabor a jugo<br/>de arandano... no las gastes<html>");
 				}else if(command == "TConsumible3"){
 					OpcionTie = BtnConsumibleT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -599,6 +614,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(102, 0, 255));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>Gema reflectora<br/>Reflecta el siguiente ataque a un<br/>enemigo duplicando su poder<br/>Uno_reverse_card.mp4<html>");
 				}else if(command == "TConsumible4"){
 					OpcionTie = BtnConsumibleT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -616,6 +632,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(102, 0, 255));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
+					Descripcion.setText("<html>1-UP<br/>Ultima linea de supervivencia<br/>otorga una vida extra para...<br/>un minuto esto es de otro juego<html>");
 				}else if(command == "TConsumible5"){
 					OpcionTie = BtnConsumibleT5.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -633,6 +650,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
+					Descripcion.setText("<html>Restaurador<br/>Gema magica que elimina los<br/>efectos negativos a tus stats generados<br/>por el enemigo<br/>No hay broma solo es eso...<html>");
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					OpcionInv = "";//aqui se llama a metodo character para equipar
 				}else if(command.equals("Sell") & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
@@ -936,25 +954,29 @@ public class GUI extends JFrame implements ActionListener {
 		BtnEquiparI.setFocusPainted(false);
 		BtnEquiparI.setFocusTraversalKeysEnabled(false);
 		BtnEquiparI.setFocusable(false);
-		BtnEquiparI.setBounds(261, 227, 129, 48);
+		BtnEquiparI.setBounds(260, 319, 129, 48);
 		BtnEquiparI.addActionListener(actionListener);
 		PanelInventarioo.add(BtnEquiparI);
 		
-		JButton BtnVender = new JButton("Vender");
-		BtnVender.setActionCommand("Sell");
-		BtnVender.setOpaque(false);
-		BtnVender.setForeground(new Color(51, 255, 51));
-		BtnVender.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		BtnVender.setFocusable(false);
-		BtnVender.setFocusTraversalKeysEnabled(false);
-		BtnVender.setFocusPainted(false);
-		BtnVender.setBorderPainted(false);
-		BtnVender.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
-		BtnVender.setBackground(Color.YELLOW);
-		BtnVender.setBounds(261, 319, 129, 48);
-		PanelInventarioo.add(BtnVender);
+		JPanel PanelInvequip = new JPanel();
+		PanelInvequip.setLayout(null);
+		PanelInvequip.setOpaque(false);
+		PanelInvequip.setBorder(new TitledBorder(new MatteBorder(4, 4, 4, 4, (Color) new Color(0, 255, 0)), "Equipamiento", TitledBorder.LEFT, TitledBorder.TOP, null, new Color(0, 255, 0)));
+		PanelInvequip.setBounds(227, 227, 200, 72);
+		PanelInventarioo.add(PanelInvequip);
+		
+		JLabel lblNewLabel = new JLabel("Arma: ");
+		lblNewLabel.setForeground(Color.GREEN);
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNewLabel.setBounds(10, 11, 180, 22);
+		PanelInvequip.add(lblNewLabel);
+		
+		JLabel lblArmadura = new JLabel("Armadura: ");
+		lblArmadura.setForeground(Color.GREEN);
+		lblArmadura.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblArmadura.setBounds(10, 39, 180, 22);
+		PanelInvequip.add(lblArmadura);
 		PanelGeneral.add(PanelStats);
-		BtnVender.addActionListener(actionListener);
 		PanelStats.setLayout(null);
 		
 		JLabel StatAtk = new JLabel();
@@ -1104,7 +1126,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTieArmor.setBounds(221, 51, 173, 140);
 		PanelTienda.add(PanelTieArmor);
 		
-		BtnArmaduraT1 = new JButton("Cadenas");
+		BtnArmaduraT1 = new JButton("Cota de malla");
 		BtnArmaduraT1.setActionCommand("TArmadura1");
 		BtnArmaduraT1.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT1.setRequestFocusEnabled(false);
@@ -1276,27 +1298,34 @@ public class GUI extends JFrame implements ActionListener {
 		BtnComprar.addActionListener(actionListener);
 		PanelTienda.add(BtnComprar);
 		
-		JButton btnDescripcion = new JButton("Descripcion");
-		btnDescripcion.setActionCommand("Description");
-		btnDescripcion.setOpaque(false);
-		btnDescripcion.setForeground(new Color(51, 255, 51));
-		btnDescripcion.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnDescripcion.setFocusable(false);
-		btnDescripcion.setFocusTraversalKeysEnabled(false);
-		btnDescripcion.setFocusPainted(false);
-		btnDescripcion.setBorderPainted(false);
-		btnDescripcion.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
-		btnDescripcion.setBackground(Color.YELLOW);
-		btnDescripcion.setBounds(243, 317, 129, 48);
-		btnDescripcion.addActionListener(actionListener);
-		PanelTienda.add(btnDescripcion);
-		
 		JLabel LogoTienda = new JLabel("");
 		LogoTienda.setIcon(new ImageIcon(GUI.class.getResource("/App/Shop Indicator.png")));
 		LogoTienda.setBounds(10, 10, 50, 48);
 		PanelTienda.add(LogoTienda);
+		
+		JButton BtnVender = new JButton("Vender");
+		BtnVender.setBounds(243, 317, 129, 48);
+		PanelTienda.add(BtnVender);
+		BtnVender.setActionCommand("Sell");
+		BtnVender.setOpaque(false);
+		BtnVender.setForeground(new Color(51, 255, 51));
+		BtnVender.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		BtnVender.setFocusable(false);
+		BtnVender.setFocusTraversalKeysEnabled(false);
+		BtnVender.setFocusPainted(false);
+		BtnVender.setBorderPainted(false);
+		BtnVender.setBorder(new MatteBorder(3, 3, 3, 3, (Color) new Color(0, 255, 0)));
+		BtnVender.setBackground(Color.YELLOW);
+		BtnVender.addActionListener(actionListener);
 		PanelGeneral.add(PanelDesc);
 		PanelDesc.setLayout(null);
+		
+		Descripcion = new JLabel("");
+		Descripcion.setHorizontalAlignment(SwingConstants.CENTER);
+		Descripcion.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		Descripcion.setForeground(Color.GREEN);
+		Descripcion.setBounds(10, 11, 407, 105);
+		PanelDesc.add(Descripcion);
 		
 		 
 					
@@ -1359,6 +1388,7 @@ public class GUI extends JFrame implements ActionListener {
 			BtnConsumibleI5.setText(texto);
 		}
 	}
+}
 		
 	
-}
+
