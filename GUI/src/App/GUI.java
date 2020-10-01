@@ -60,8 +60,8 @@ public class GUI extends JFrame implements ActionListener {
 	public static JButton BtnConsumibleT3;
 	public static JButton BtnConsumibleT4;
 	public static JButton BtnConsumibleT5;
-	private String OpcionTie= "";
-	private String OpcionInv= "";
+	private static String OpcionTie= "";
+	private static String OpcionInv= "";
 	/**
 	 * Launch the application.
 	 */
@@ -94,8 +94,7 @@ public class GUI extends JFrame implements ActionListener {
 			public void actionPerformed(ActionEvent describir) {	
 				String command = describir.getActionCommand();
 				if (command == "IArma1"){
-					OpcionInv = BtnArmaI1.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaI1.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(102, 0, 255));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -111,10 +110,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaI1.getActionCommand();
 					}
 				}else if(command == "IArma2"){
-					OpcionInv = BtnArmaI2.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaI2.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(102, 0, 255));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -130,10 +129,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaI2.getActionCommand();
 					}
 				}else if(command == "IArma3"){
-					OpcionInv = BtnArmaI3.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaI3.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(102, 0, 255));
@@ -149,10 +148,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaI3.getActionCommand();
 					}
 				}else if(command == "IArma4"){
-					OpcionInv = BtnArmaI4.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaI4.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -168,10 +167,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaI4.getActionCommand();
 					}
 				}else if(command == "IArma5"){
-					OpcionInv = BtnArmaI5.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaI5.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -187,10 +186,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaI5.getActionCommand();
 					}
 				}else if(command == "IArmadura1"){
-					OpcionInv = BtnArmaduraI1.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaduraI1.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -206,10 +205,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaduraI1.getActionCommand();
 					}
 				}else if(command == "IArmadura2"){
-					OpcionInv =  BtnArmaduraI2.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaduraI2.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -225,10 +224,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaduraI2.getActionCommand();
 					}
 				}else if(command == "IArmadura3"){
-					OpcionInv =  BtnArmaduraI3.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaduraI3.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -244,10 +243,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaduraI3.getActionCommand();
 					}
 				}else if(command == "IArmadura4"){
-					OpcionInv =  BtnArmaduraI4.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaduraI4.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -263,10 +262,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaduraI4.getActionCommand();
 					}
 				}else if(command == "IArmadura5"){
-					OpcionInv =  BtnArmaduraI5.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnArmaduraI5.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -282,10 +281,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnArmaduraI5.getActionCommand();
 					}
 				}else if(command == "IConsumible1"){
-					OpcionInv = BtnConsumibleI2.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnConsumibleI1.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -301,10 +300,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnConsumibleI1.getActionCommand();
 					}
 				}else if(command == "IConsumible2"){
-					OpcionInv = BtnConsumibleI2.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnConsumibleI2.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -320,10 +319,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnConsumibleI2.getActionCommand();
 					}
 				}else if(command == "IConsumible3"){
-					if(!OpcionInv.equals("")) {
-						OpcionInv = BtnConsumibleI3.getText();
+					if(!(BtnConsumibleI3.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -339,10 +338,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(102, 0, 255));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnConsumibleI3.getActionCommand();
 					}
 				}else if(command == "IConsumible4"){
-					OpcionInv = BtnConsumibleI4.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnConsumibleI4.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -358,10 +357,10 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(102, 0, 255));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+						OpcionInv = BtnConsumibleI4.getActionCommand();
 					}
 				}else if(command == "IConsumible5"){
-					OpcionInv = BtnConsumibleI5.getText();
-					if(!OpcionInv.equals("")) {
+					if(!(BtnConsumibleI5.getText()).equals("")) {
 						BtnArmaI1.setBackground(new Color(0, 51, 0));
 						BtnArmaI2.setBackground(new Color(0, 51, 0));
 						BtnArmaI3.setBackground(new Color(0, 51, 0));
@@ -377,6 +376,7 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI3.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(102, 0, 255));
+						OpcionInv = BtnConsumibleI5.getActionCommand();
 					}
 				}else if (command == "TArma1"){
 					OpcionTie = BtnArmaT1.getText();
@@ -635,7 +635,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					OpcionInv = "";//aqui se llama a metodo character para equipar
-				}else if(command == "Sell" & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
+				}else if(command.equals("Sell") & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
+					Character.vender(OpcionInv);
 				}else if(command.equals("Buy") & ! OpcionTie.equals("")){
 					Character.comprar(OpcionTie);//aqui se llama a metodo de tienda para comprar
 				}else if(command == "Descrition" & ! OpcionTie.equals("")){
@@ -1308,8 +1309,26 @@ public class GUI extends JFrame implements ActionListener {
 	}
 
 	public static void cambiaText(String texto,String num) {
+		if (texto.equals("")) {
+			OpcionInv="";
+			BtnArmaI1.setBackground(new Color(0, 51, 0));
+			BtnArmaI2.setBackground(new Color(0, 51, 0));
+			BtnArmaI3.setBackground(new Color(0, 51, 0));
+			BtnArmaI4.setBackground(new Color(0, 51, 0));
+			BtnArmaI5.setBackground(new Color(0, 51, 0));
+			BtnArmaduraI1.setBackground(new Color(0, 51, 0));
+			BtnArmaduraI2.setBackground(new Color(0, 51, 0));
+			BtnArmaduraI3.setBackground(new Color(0, 51, 0));
+			BtnArmaduraI4.setBackground(new Color(0, 51, 0));
+			BtnArmaduraI5.setBackground(new Color(0, 51, 0));
+			BtnConsumibleI1.setBackground(new Color(0, 51, 0));
+			BtnConsumibleI2.setBackground(new Color(0, 51, 0));
+			BtnConsumibleI3.setBackground(new Color(0, 51, 0));
+			BtnConsumibleI4.setBackground(new Color(0, 51, 0));
+			BtnConsumibleI5.setBackground(new Color(0, 51, 0));
+		}
 		if (num.equals("1")){
-		BtnArmaI1.setText(texto);
+			BtnArmaI1.setText(texto);
 		}else if(num.equals("2")){
 			BtnArmaI2.setText(texto);
 		}else if(num.equals("3")){
