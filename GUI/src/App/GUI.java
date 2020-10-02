@@ -397,7 +397,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Bate de Metal<br/>Es un bate... pero de metal :3<br/>No es ligero pero tampoco pesado<html>");
+					Descripcion.setText("<html>Bate de Metal<br/><br/>Es un bate... pero de metal... creo que es obvio<br/>No es ligero pero tampoco pesado<html>");
 				}else if(command == "TArma2"){
 					OpcionTie = BtnArmaT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -415,7 +415,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Daga Siniestra<br/>Una daga muy misteriosa<br/>No sabes por que pero el usarla<br/>otorga gran agilidad<html>");
+					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamaño esta<br/>logra otorgar gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -433,7 +433,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Guante Magico<br/>Un guante que por si<br/>solo no es muy fuerte<br/>Pero su poder magico<br/>boostea el poder de tus hechizos<html>");
+					Descripcion.setText("<html>Guante Magico<br/><br/>Un guante que por si solo no es muy fuerte<br/>Pero su poder magico boostea el poder de tus hechizos<html>");
 				}else if(command == "TArma4"){
 					OpcionTie = BtnArmaT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -451,7 +451,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Lanza Oscura<br/>Un arma de alto poder que conlleva<br/>un precio a pagar<br/>Su poder oscuro te baja tus puntos base<br/>pero tiene mucho poder a cambio<html>");
+					Descripcion.setText("<html>Lanza Oscura<br/><br/>Un arma de alto poder que conlleva un precio a pagar<br/>Su poder oscuro te baja tus puntos base<br/>pero tiene mucho poder a cambio<html>");
 					
 				}else if(command == "TArma5"){
 					OpcionTie = BtnArmaT5.getText();
@@ -470,7 +470,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Zweinhander<br/>Gran espadon de doble filo<br/>y formidable poder<br/>Es increiblemente pesada<br/>no recomendable llevar una maraton :p<html>");
+					Descripcion.setText("<html>Zweinhander<br/><br/>Gran espadon de doble filo y formidable poder<br/>Es increiblemente pesada<br/>No recomendable llevar una maraton :p<html>");
 				}else if(command == "TArmadura1"){
 					OpcionTie = BtnArmaduraT1.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -488,7 +488,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Cota de Malla<br/>No creo que sea tan segura<br/>parece cortado de una reja<html>");
+					Descripcion.setText("<html>Cota de Malla<br/><br/>No creo que sea tan segura ya que parece cortado<br/>de una reja vieja y oxidada<html>");
 				}else if(command == "TArmadura2"){
 					OpcionTie =  BtnArmaduraT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -506,7 +506,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Chaqueta Pesada<br/> Chaqueta con alto peso y gran<br/>poder para absorber da�o<br/>Mucho cuidado con la insolacion");
+					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber daño<br/>Mucho cuidado con la insolacion");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -524,7 +524,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Bata Oscura<br/>Esta bata absorbe tu energia vital<br/>a cambio de mayor defensa y magia<br/>Feels good to be a bad guy >:3<html>");
+					Descripcion.setText("<html>Bata Oscura<br/><br/>Esta bata absorbe tu energia vital a cambio de mayor<br/>defensa y magia pero te hace parecer sospechoso...<br/>No la lleves a una sesion de Among Us<html>");
 				}else if(command == "TArmadura4"){
 					OpcionTie =  BtnArmaduraT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -542,7 +542,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Capa Angelical<br/>Una capa forgada por los angeles que otorga mucha <br/>defensa y vida a cambio de menor ataque<br/>Perfecta si eres un healer main<html>");
+					Descripcion.setText("<html>Capa Angelical<br/><br/>Una capa forgada por los angeles que otorga mucha <br/>defensa y vida a cambio de menor ataque<br/>Perfecta si eres un healer main<html>");
 				}else if(command == "TArmadura5"){
 					OpcionTie =  BtnArmaduraT5.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -560,7 +560,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Placa Paladin<br/>Muro impenetrable de la fe<br/> pero al igual que un muro no te puedes mover<html>");
+					Descripcion.setText("<html>Placa Paladin<br/><br/>Muro impenetrable de la fe<br/>pero al igual que un muro no te puedes mover<br/>Tambien posee defensa formidable<html>");
 				}else if(command == "TConsumible1"){
 					OpcionTie = BtnConsumibleT1.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -578,7 +578,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Medicina<br/>Item basico de cualquier aventurero<br/>Recupera 50HP<br/>Por alguna razon sabe<br/>a menta... usalas bien<html>");
+					Descripcion.setText("<html>Medicina<br/><br/>Item basico de cualquier aventurero que por alguna<br/>razon sabe a menta... pero su frescura recupera 50HP<html>");
 				}else if(command == "TConsumible2"){
 					OpcionTie = BtnConsumibleT2.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -596,7 +596,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Pocion de Mana<br/>Al igual que la medicina esta<br/>recupera 50MP<br/>Por alguna razon tiene sabor a jugo<br/>de arandano... no las gastes<html>");
+					Descripcion.setText("<html>Pocion de Mana<br/><br/>Por alguna razon tiene sabor a jugo de arandano...<br/>A pesar de su tentador sabor esta recupera 50MP<html>");
 				}else if(command == "TConsumible3"){
 					OpcionTie = BtnConsumibleT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -614,7 +614,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(102, 0, 255));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Gema reflectora<br/>Reflecta el siguiente ataque a un<br/>enemigo duplicando su poder<br/>Uno_reverse_card.mp4<html>");
+					Descripcion.setText("<html>Gema reflectora<br/><br/>Reflecta el siguiente ataque a un enemigo<br/>duplicando su poder AKA Uno_reverse_card.mp4<html>");
 				}else if(command == "TConsumible4"){
 					OpcionTie = BtnConsumibleT4.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -632,7 +632,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(102, 0, 255));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>1-UP<br/>Ultima linea de supervivencia<br/>otorga una vida extra para...<br/>un minuto esto es de otro juego<html>");
+					Descripcion.setText("<html>1-UP<br/><br/>Ultima linea de supervivencia otorga una vida<br/>extra para... un minuto esto es de otro juego<html>");
 				}else if(command == "TConsumible5"){
 					OpcionTie = BtnConsumibleT5.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -650,7 +650,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
-					Descripcion.setText("<html>Restaurador<br/>Gema magica que elimina los<br/>efectos negativos a tus stats generados<br/>por el enemigo<br/>No hay broma solo es eso...<html>");
+					Descripcion.setText("<html>Restaurador<br/><br/>Gema magica que elimina los efectos negativos<br/>a tus stats generados por el enemigo<br/>No hay broma solo es eso...<html>");
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					OpcionInv = "";//aqui se llama a metodo character para equipar
 				}else if(command.equals("Sell") & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
@@ -1324,7 +1324,7 @@ public class GUI extends JFrame implements ActionListener {
 		Descripcion.setHorizontalAlignment(SwingConstants.CENTER);
 		Descripcion.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		Descripcion.setForeground(Color.GREEN);
-		Descripcion.setBounds(10, 11, 407, 105);
+		Descripcion.setBounds(10, 10, 407, 105);
 		PanelDesc.add(Descripcion);
 		
 		 
@@ -1389,6 +1389,3 @@ public class GUI extends JFrame implements ActionListener {
 		}
 	}
 }
-		
-	
-
