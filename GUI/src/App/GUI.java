@@ -61,6 +61,8 @@ public class GUI extends JFrame implements ActionListener {
 	public static JButton BtnConsumibleT4;
 	public static JButton BtnConsumibleT5;
 	public static JLabel Descripcion;
+	public static JLabel lblArma;
+	public static JLabel lblArmadura;
 	private static String OpcionTie= "";
 	private static String OpcionInv= "";
 	/**
@@ -667,13 +669,11 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
 					Descripcion.setText("<html>Restaurador<br/><br/>Gema magica que elimina los efectos negativos<br/>a tus stats generados por el enemigo<br/>No hay broma solo es eso...<html>");
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
-					OpcionInv = "";//aqui se llama a metodo character para equipar
+					Character.Equipar(OpcionInv);
 				}else if(command.equals("Sell") & ! OpcionInv.equals("")){//aqui se llama a metodo character para vender
 					Character.vender(OpcionInv);
 				}else if(command.equals("Buy") & ! OpcionTie.equals("")){
 					Character.comprar(OpcionTie);//aqui se llama a metodo de tienda para comprar
-				}else if(command == "Descrition" & ! OpcionTie.equals("")){
-					OpcionTie = "";//aqui se llama a metodo de tienda para mostrar stats
 				}
 			}
 		};
@@ -980,13 +980,13 @@ public class GUI extends JFrame implements ActionListener {
 		PanelInvequip.setBounds(227, 227, 200, 72);
 		PanelInventarioo.add(PanelInvequip);
 		
-		JLabel lblNewLabel = new JLabel("Arma: ");
-		lblNewLabel.setForeground(Color.GREEN);
-		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		lblNewLabel.setBounds(10, 11, 180, 22);
-		PanelInvequip.add(lblNewLabel);
+		lblArma = new JLabel("Arma: ");
+		lblArma.setForeground(Color.GREEN);
+		lblArma.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblArma.setBounds(10, 11, 180, 22);
+		PanelInvequip.add(lblArma);
 		
-		JLabel lblArmadura = new JLabel("Armadura: ");
+		lblArmadura = new JLabel("Armadura: ");
 		lblArmadura.setForeground(Color.GREEN);
 		lblArmadura.setFont(new Font("Tahoma", Font.PLAIN, 13));
 		lblArmadura.setBounds(10, 39, 180, 22);
@@ -1401,6 +1401,15 @@ public class GUI extends JFrame implements ActionListener {
 			BtnConsumibleI4.setText(texto);
 		}else if(num.equals("15")){
 			BtnConsumibleI5.setText(texto);
+		}
+	}
+	public static void cambiaEquip(String nombre, Integer tipo) {
+		if (!nombre.equals("")) {
+			if (tipo.equals(1)) {
+				lblArma.setText("Arma: "+nombre);
+			}else {
+				lblArmadura.setText("Armadura: "+nombre);
+			}
 		}
 	}
 }
