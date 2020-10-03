@@ -93,6 +93,76 @@ public class GUI extends JFrame implements ActionListener {
         personaje.Mana= 15;
         personaje.Defensa= 25;
         personaje.Velocidad= 125;
+        Armas Arma1 = new Armas();
+        Arma1.Ataque=0;
+        Arma1.Magia=0;
+        Arma1.Velocidad=0;
+        Arma1.PrecioC=0;
+        Arma1.PrecioV=0;
+        Armas Arma2 = new Armas();
+        Arma2.Ataque=0;
+        Arma2.Magia=0;
+        Arma2.Velocidad=0;
+        Arma2.PrecioC=0;
+        Arma2.PrecioV=0;
+        Armas Arma3 = new Armas();
+        Arma3.Ataque=0;
+        Arma3.Magia=0;
+        Arma3.Velocidad=0;
+        Arma3.PrecioC=0;
+        Arma3.PrecioV=0;
+        Armas Arma4 = new Armas();
+        Arma4.Ataque=0;
+        Arma4.Magia=0;
+        Arma4.Velocidad=0;
+        Arma4.PrecioC=0;
+        Arma4.PrecioV=0;
+        Armas Arma5 = new Armas();
+        Arma5.Ataque=0;
+        Arma5.Magia=0;
+        Arma5.Velocidad=0;
+        Arma5.PrecioC=0;
+        Arma5.PrecioV=0;
+        Armadura Armadura1 = new Armadura();
+        Armadura1.Salud=0;
+        Armadura1.Defensa=0;
+        Armadura1.Velocidad=0;
+        Armadura1.PrecioC=0;
+        Armadura1.PrecioV=0;
+        Armadura Armadura2 = new Armadura();
+        Armadura1.Salud=0;
+        Armadura1.Defensa=0;
+        Armadura1.Velocidad=0;
+        Armadura1.PrecioC=0;
+        Armadura1.PrecioV=0;
+        Armadura Armadura3 = new Armadura();
+        Armadura Armadura4 = new Armadura();
+        Armadura1.Salud=0;
+        Armadura1.Defensa=0;
+        Armadura1.Velocidad=0;
+        Armadura1.PrecioC=0;
+        Armadura1.PrecioV=0;
+        Armadura Armadura5 = new Armadura();
+        Armadura1.Salud=0;
+        Armadura1.Defensa=0;
+        Armadura1.Velocidad=0;
+        Armadura1.PrecioC=0;
+        Armadura1.PrecioV=0;
+        Consumibles Consumible1 = new Consumibles();
+        Consumible1.PrecioC=0;
+        Consumible1.PrecioV=0;
+        Consumibles Consumible2 = new Consumibles();
+        Consumible2.PrecioC=0;
+        Consumible2.PrecioV=0;
+        Consumibles Consumible3 = new Consumibles();
+        Consumible3.PrecioC=0;
+        Consumible3.PrecioV=0;
+        Consumibles Consumible4 = new Consumibles();
+        Consumible4.PrecioC=0;
+        Consumible4.PrecioV=0;
+        Consumibles Consumible5 = new Consumibles();
+        Consumible5.PrecioC=0;
+        Consumible5.PrecioV=0;
 		ActionListener actionListener = new ActionListener() {
 			public void actionPerformed(ActionEvent describir) {	
 				String command = describir.getActionCommand();
@@ -135,7 +205,7 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnArmaI2.getActionCommand();
-						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamaño esta<br/>logra otorgar gran agilidad<html>");
+						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamaï¿½o esta<br/>logra otorgar gran agilidad<html>");
 					}
 				}else if(command == "IArma3"){
 					if(!(BtnArmaI3.getText()).equals("")) {
@@ -235,7 +305,7 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI4.setBackground(new Color(0, 51, 0));
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnArmaduraI2.getActionCommand();
-						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber daño<br/>Mucho cuidado con la insolacion");
+						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber daï¿½o<br/>Mucho cuidado con la insolacion");
 					}
 				}else if(command == "IArmadura3"){
 					if(!(BtnArmaduraI3.getText()).equals("")) {
@@ -432,7 +502,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamaño esta<br/>logra otorgar gran agilidad<html>");
+					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamaï¿½o esta<br/>logra otorgar gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -523,7 +593,7 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT3.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
-					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber daño<br/>Mucho cuidado con la insolacion");
+					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber daï¿½o<br/>Mucho cuidado con la insolacion");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -1141,7 +1211,7 @@ public class GUI extends JFrame implements ActionListener {
 		PanelTieArmor.setBounds(221, 51, 173, 140);
 		PanelTienda.add(PanelTieArmor);
 		
-		BtnArmaduraT1 = new JButton("Cota de malla");
+		BtnArmaduraT1 = new JButton("Cota de Malla");
 		BtnArmaduraT1.setActionCommand("TArmadura1");
 		BtnArmaduraT1.setHorizontalAlignment(SwingConstants.LEFT);
 		BtnArmaduraT1.setRequestFocusEnabled(false);
@@ -1373,24 +1443,54 @@ public class GUI extends JFrame implements ActionListener {
 		}
 		if (num.equals("1")){
 			BtnArmaI1.setText(texto);
+			if(texto.equals("") & lblArma.getText().equals("Arma: Bate de Metal")  ) {
+				lblArma.setText("Arma:");
+			}
 		}else if(num.equals("2")){
 			BtnArmaI2.setText(texto);
+			if(texto.equals("") & lblArma.getText().equals("Arma: Daga Siniestra")  ) {
+				lblArma.setText("Arma:");
+			}
 		}else if(num.equals("3")){
 			BtnArmaI3.setText(texto);
+			if(texto.equals("") & lblArma.getText().equals("Arma: Guante Magico")  ) {
+				lblArma.setText("Arma:");
+			}
 		}else if(num.equals("4")){
 			BtnArmaI4.setText(texto);
+			if(texto.equals("") & lblArma.getText().equals("Arma: Lanza Oscura")  ) {
+				lblArma.setText("Arma:");
+			}
 		}else if(num.equals("5")){
 			BtnArmaI5.setText(texto);
+			if(texto.equals("") & lblArma.getText().equals("Arma: Zweihander")  ) {
+				lblArma.setText("Arma:");
+			}
 		}else if (num.equals("6")){
 			BtnArmaduraI1.setText(texto);
+			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Cota de Malla")  ) {
+				lblArmadura.setText("Armadura: ");
+			}
 		}else if(num.equals("7")){
 			BtnArmaduraI2.setText(texto);
+			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Chaqueta Pesada")  ) {
+				lblArmadura.setText("Armadura: ");
+			}
 		}else if(num.equals("8")){
 			BtnArmaduraI3.setText(texto);
+			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Bata Oscura")  ) {
+				lblArmadura.setText("Armadura: ");
+			}
 		}else if(num.equals("9")){
 			BtnArmaduraI4.setText(texto);
+			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Capa Angelical")  ) {
+				lblArmadura.setText("Armadura: ");
+			}
 		}else if(num.equals("10")){
 			BtnArmaduraI5.setText(texto);
+			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Placa Paladin")  ) {
+				lblArmadura.setText("Armadura: ");
+			}
 		}else if (num.equals("11")){
 			BtnConsumibleI1.setText(texto);
 		}else if(num.equals("12")){
@@ -1413,6 +1513,3 @@ public class GUI extends JFrame implements ActionListener {
 		}
 	}
 }
-		
-	
-

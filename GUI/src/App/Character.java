@@ -13,6 +13,7 @@ public class Character {
     public int Mana;
     public int Defensa;
     public int Velocidad;
+    
     static List<Integer> inventarioDArmaduras = new ArrayList<Integer>(Arrays.asList(0,0,0,0,0));
     static List<Integer> inventarioArmas = new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0, 0));
     static List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0, 0));
@@ -34,7 +35,7 @@ public class Character {
         }else if(opcion.equals("Zweihander")){
         	inventarioArmas.set(4, inventarioArmas.get(4) + 1);
             GUI.cambiaText(opcion+" x"+inventarioArmas.get(4),"5");
-        }else if (opcion.equals("Cota de malla")){
+        }else if (opcion.equals("Cota de Malla")){
         	inventarioDArmaduras.set(0, inventarioDArmaduras.get(0) + 1);
             GUI.cambiaText(opcion+" x"+inventarioDArmaduras.get(0),"6");
         }else if(opcion.equals("Chaqueta Pesada")){
