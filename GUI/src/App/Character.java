@@ -125,7 +125,7 @@ public class Character {
         			GUI.cambiaText("", "6");
         		}
         		else {
-        			GUI.cambiaText("Cota de malla"+" x"+inventarioDArmaduras.get(0), "6");
+        			GUI.cambiaText("Cota de Malla"+" x"+inventarioDArmaduras.get(0), "6");
         		}
         	}
         }else if(opcion.equals("IArmadura2")){
@@ -219,6 +219,38 @@ public class Character {
         		}
         	}
         }
+    }
+    public static void Equipar(String opcion) {
+    	if (opcion.equals("IArma1")) {
+    		GUI.cambiaEquip("Bate de Metal",1);
+    	}
+    	else if (opcion.equals("IArma2")) {
+    		GUI.cambiaEquip("Daga Siniestra",1);
+    	}
+    	else if (opcion.equals("IArma3")) {
+    		GUI.cambiaEquip("Guante Magico",1);
+    	}
+    	else if (opcion.equals("IArma4")) {
+    		GUI.cambiaEquip("Lanza Oscura",1);
+    	}
+    	else if (opcion.equals("IArma5")) {
+    		GUI.cambiaEquip("Zweihander",1);
+    	}
+    	else if (opcion.equals("IArmadura1")) {
+    		GUI.cambiaEquip("Cota de Malla",2);
+    	}
+    	else if (opcion.equals("IArmadura2")) {
+    		GUI.cambiaEquip("Chaqueta Pesada",2);
+    	}
+    	else if (opcion.equals("IArmadura3")) {
+    		GUI.cambiaEquip("Bata Oscura",2);
+    	}
+    	else if (opcion.equals("IArmadura4")) {
+    		GUI.cambiaEquip("Capa Angelical",2);
+    	}
+    	else if (opcion.equals("IArmadura5")) {
+    		GUI.cambiaEquip("Placa Paladin",2);
+    	}
     }
     //Metodo para definir los atributos de los objetos
     public static void main(final String[] args) {
