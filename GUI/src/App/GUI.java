@@ -242,7 +242,7 @@ public class GUI extends JFrame implements ActionListener {
 						muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
-						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tama�o esta<br/>logra otorgar gran agilidad<html>");
+						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 					}
 				}else if(command == "IArma3"){
 					if(!(BtnArmaI3.getText()).equals("")) {
@@ -362,7 +362,7 @@ public class GUI extends JFrame implements ActionListener {
 						muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
-						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber da�o<br/>Mucho cuidado con la insolacion");
+						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber dano<br/>Mucho cuidado con la insolacion");
 					}
 				}else if(command == "IArmadura3"){
 					if(!(BtnArmaduraI3.getText()).equals("")) {
@@ -594,7 +594,7 @@ public class GUI extends JFrame implements ActionListener {
 					muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
-					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tama�o esta<br/>logra otorgar gran agilidad<html>");
+					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -705,7 +705,7 @@ public class GUI extends JFrame implements ActionListener {
 					muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
-					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber da�o<br/>Mucho cuidado con la insolacion");
+					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber dano<br/>Mucho cuidado con la insolacion");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -1818,19 +1818,28 @@ public class GUI extends JFrame implements ActionListener {
 	public static void muestraStatsB(Integer defensa,Integer salud,Integer peso) {
 		if (!(lblArmadura.getText()).equals("Armadura:")) {
 			if (defensa != 0) {
-				StatDfs.setText(personaje.Defensa +" +"+( DfsBase+defensa-personaje.Defensa));
+				if (defensa<personaje.Defensa) {
+					StatDfs.setText(personaje.Defensa +" "+( DfsBase+defensa-personaje.Defensa));
+				}else {
+				StatDfs.setText(personaje.Defensa +" +"+( DfsBase+defensa-personaje.Defensa));}
 			}else {
 				StatDfs.setText(personaje.Defensa+"");
 			}
 			if (salud != 0) {
-				StatHlth.setText(personaje.Vida+" +"+( HltBase+salud-personaje.Vida));
+				if (salud<personaje.Vida) {
+					StatHlth.setText(personaje.Vida+" "+( HltBase+salud-personaje.Vida));
+				}else {
+				StatHlth.setText(personaje.Vida+" +"+( HltBase+salud-personaje.Vida));}
 			}else {
 				StatHlth.setText(personaje.Vida+"");
 			}
 			StatAtk.setText(personaje.Ataque+"");
 			StatSpd.setText(personaje.Velocidad+"");
 			if (peso != 0) {
-				StatWgt.setText(personaje.Peso+" +"+( WgtBase+peso-personaje.Peso));
+				if (peso<personaje.Peso) {
+					StatWgt.setText(personaje.Peso+" "+( WgtBase+peso-personaje.Peso));
+				}else {
+				StatWgt.setText(personaje.Peso+" +"+( WgtBase+peso-personaje.Peso));}
 			}else {
 				StatWgt.setText(personaje.Peso+"");
 			}
@@ -1855,3 +1864,6 @@ public class GUI extends JFrame implements ActionListener {
 		}
 	}
 }
+		
+	
+
