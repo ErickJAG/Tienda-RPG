@@ -217,43 +217,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Arma1.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma1.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma1.PrecioV)+"$");
-						if (!(lblArma.getText()).equals("Arma: ")) {
-							if (Arma1.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque +" "+( AtkBase+Arma1.Ataque-personaje.Ataque));
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma1.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" "+( SpdBase+Arma1.Velocidad-personaje.Velocidad));
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma1.Magia != 0) {
-								StatMna.setText(personaje.Mana+" "+( MnaBase+Arma1.Magia-personaje.Mana));
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}else {
-							if (Arma1.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque+" +"+Arma1.Ataque);
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma1.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" +"+Arma1.Velocidad);
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma1.Magia != 0) {
-								StatMna.setText(personaje.Mana+" +"+Arma1.Magia);
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}
+						muestraStatsA(Arma1.Ataque,Arma1.Magia,Arma1.Velocidad);
 						Descripcion.setText("<html>Bate de Metal<br/><br/>Es un bate... pero de metal... creo que es obvio<br/>No es ligero pero tampoco pesado<html>");
 						
 					}
@@ -278,44 +242,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Arma2.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
-						if (!(lblArma.getText()).equals("Arma: ")) {
-							if (Arma2.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque +" "+( AtkBase+Arma2.Ataque-personaje.Ataque));
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma2.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" "+( SpdBase+Arma2.Velocidad-personaje.Velocidad));
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma2.Magia != 0) {
-								StatMna.setText(personaje.Mana+" "+( MnaBase+Arma2.Magia-personaje.Mana));
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}else {
-							if (Arma2.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque+" +"+Arma2.Ataque);
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma2.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" +"+Arma2.Velocidad);
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma2.Magia != 0) {
-								StatMna.setText(personaje.Mana+" +"+Arma2.Magia);
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}
-						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tama�o esta<br/>logra otorgar gran agilidad<html>");
+						muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
+						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 					}
 				}else if(command == "IArma3"){
 					if(!(BtnArmaI3.getText()).equals("")) {
@@ -338,43 +266,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Arma3.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma3.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma3.PrecioV)+"$");
-						if (!(lblArma.getText()).equals("Arma: ")) {
-							if (Arma3.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque +" "+( AtkBase+Arma3.Ataque-personaje.Ataque));
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma3.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" "+( SpdBase+Arma3.Velocidad-personaje.Velocidad));
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma3.Magia != 0) {
-								StatMna.setText(personaje.Mana+" "+( MnaBase+Arma3.Magia-personaje.Mana));
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}else {
-							if (Arma3.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque+" +"+Arma3.Ataque);
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma3.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" +"+Arma3.Velocidad);
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma3.Magia != 0) {
-								StatMna.setText(personaje.Mana+" +"+Arma3.Magia);
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}
+						muestraStatsA(Arma3.Ataque,Arma3.Magia,Arma3.Velocidad);
 						Descripcion.setText("<html>Guante Magico<br/><br/>Un guante que por si solo no es muy fuerte<br/>Pero su poder magico boostea el poder de tus hechizos<html>");
 					}
 				}else if(command == "IArma4"){
@@ -398,43 +290,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Arma4.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma4.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma4.PrecioV)+"$");
-						if (!(lblArma.getText()).equals("Arma: ")) {
-							if (Arma4.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque +" "+( AtkBase+Arma4.Ataque-personaje.Ataque));
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma4.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" "+( SpdBase+Arma4.Velocidad-personaje.Velocidad));
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma4.Magia != 0) {
-								StatMna.setText(personaje.Mana+" "+( MnaBase+Arma4.Magia-personaje.Mana));
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}else {
-							if (Arma4.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque+" +"+Arma4.Ataque);
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma1.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" +"+Arma1.Velocidad);
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma4.Magia != 0) {
-								StatMna.setText(personaje.Mana+" +"+Arma4.Magia);
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}
+						muestraStatsA(Arma4.Ataque,Arma4.Magia,Arma4.Velocidad);
 						Descripcion.setText("<html>Lanza Oscura<br/><br/>Un arma de alto poder que conlleva un precio a pagar<br/>Su poder oscuro te baja tus puntos base<br/>pero tiene mucho poder a cambio<html>");
 					}
 				}else if(command == "IArma5"){
@@ -458,43 +314,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Arma5.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Arma5.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Arma5.PrecioV)+"$");
-						if (!(lblArma.getText()).equals("Arma: ")) {
-							if (Arma5.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque +" "+( AtkBase+Arma5.Ataque-personaje.Ataque));
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma5.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" "+( SpdBase+Arma5.Velocidad-personaje.Velocidad));
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma5.Magia != 0) {
-								StatMna.setText(personaje.Mana+" "+( MnaBase+Arma5.Magia-personaje.Mana));
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}else {
-							if (Arma5.Ataque != 0) {
-								StatAtk.setText(personaje.Ataque+" +"+Arma5.Ataque);
-							}else {
-								StatAtk.setText(personaje.Ataque+"");
-							}
-							if (Arma5.Velocidad != 0) {
-								StatSpd.setText(personaje.Velocidad+" +"+Arma5.Velocidad);
-							}else {
-								StatSpd.setText(personaje.Velocidad+"");
-							}
-							StatHlth.setText(personaje.Vida+"");
-							StatDfs.setText(personaje.Defensa+"");
-							if (Arma5.Magia != 0) {
-								StatMna.setText(personaje.Mana+" +"+Arma5.Magia);
-							}else {
-								StatMna.setText(personaje.Mana+"");
-							}
-						}
+						muestraStatsA(Arma5.Ataque,Arma5.Magia,Arma5.Velocidad);
 						Descripcion.setText("<html>Zweinhander<br/><br/>Gran espadon de doble filo y formidable poder<br/>Es increiblemente pesada<br/>No recomendable llevar una maraton :p<html>");
 					}
 				}else if(command == "IArmadura1"){
@@ -518,6 +338,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Armadura1.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura1.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura1.PrecioV)+"$");
+						muestraStatsB(Armadura1.Defensa,Armadura1.Salud,Armadura1.Peso);
 						Descripcion.setText("<html>Cota de Malla<br/><br/>No creo que sea tan segura ya que parece cortado<br/>de una reja vieja y oxidada<html>");
 					}
 				}else if(command == "IArmadura2"){
@@ -541,7 +362,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Armadura2.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
-						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber da�o<br/>Mucho cuidado con la insolacion");
+						muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
+						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber dano<br/>Mucho cuidado con la insolacion");
 					}
 				}else if(command == "IArmadura3"){
 					if(!(BtnArmaduraI3.getText()).equals("")) {
@@ -564,6 +386,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Armadura3.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura3.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura3.PrecioV)+"$");
+						muestraStatsB(Armadura3.Defensa,Armadura3.Salud,Armadura3.Peso);
 						Descripcion.setText("<html>Bata Oscura<br/><br/>Esta bata absorbe tu energia vital a cambio de mayor<br/>defensa y magia pero te hace parecer sospechoso...<br/>No la lleves a una sesion de Among Us<html>");
 					}
 				}else if(command == "IArmadura4"){
@@ -587,6 +410,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Armadura4.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura4.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura4.PrecioV)+"$");
+						muestraStatsB(Armadura4.Defensa,Armadura4.Salud,Armadura4.Peso);
 						Descripcion.setText("<html>Capa Angelical<br/><br/>Una capa forgada por los angeles que otorga mucha <br/>defensa y vida a cambio de menor ataque<br/>Perfecta si eres un healer main<html>");
 					}
 				}else if(command == "IArmadura5"){
@@ -610,6 +434,7 @@ public class GUI extends JFrame implements ActionListener {
 						OpVenta=Armadura5.PrecioV;
 						lblPrecioC.setText("Precio: "+String.valueOf(Armadura5.PrecioC)+"$");
 						lblPrecioV.setText("Venta: "+String.valueOf(Armadura5.PrecioV)+"$");
+						muestraStatsB(Armadura5.Defensa,Armadura5.Salud,Armadura5.Peso);
 						Descripcion.setText("<html>Placa Paladin<br/><br/>Muro impenetrable de la fe<br/>pero al igual que un muro no te puedes mover<br/>Tambien posee defensa formidable<html>");
 					}
 				}else if(command == "IConsumible1"){
@@ -747,6 +572,8 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Arma1.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma1.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma1.PrecioV)+"$");
+					muestraStatsA(Arma1.Ataque,Arma1.Magia,Arma1.Velocidad);
+					
 					Descripcion.setText("<html>Bate de Metal<br/><br/>Es un bate... pero de metal... creo que es obvio<br/>No es ligero pero tampoco pesado<html>");
 				}else if(command == "TArma2"){
 					OpcionTie = BtnArmaT2.getText();
@@ -768,7 +595,8 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Arma2.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
-					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tama�o esta<br/>logra otorgar gran agilidad<html>");
+					muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
+					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -789,6 +617,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Arma3.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma3.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma3.PrecioV)+"$");
+					muestraStatsA(Arma3.Ataque,Arma3.Magia,Arma3.Velocidad);
 					Descripcion.setText("<html>Guante Magico<br/><br/>Un guante que por si solo no es muy fuerte<br/>Pero su poder magico boostea el poder de tus hechizos<html>");
 				}else if(command == "TArma4"){
 					OpcionTie = BtnArmaT4.getText();
@@ -810,6 +639,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Arma4.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma4.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma4.PrecioV)+"$");
+					muestraStatsA(Arma4.Ataque,Arma4.Magia,Arma4.Velocidad);
 					Descripcion.setText("<html>Lanza Oscura<br/><br/>Un arma de alto poder que conlleva un precio a pagar<br/>Su poder oscuro te baja tus puntos base<br/>pero tiene mucho poder a cambio<html>");
 					
 				}else if(command == "TArma5"){
@@ -832,6 +662,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Arma5.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Arma5.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Arma5.PrecioV)+"$");
+					muestraStatsA(Arma5.Ataque,Arma5.Magia,Arma5.Velocidad);
 					Descripcion.setText("<html>Zweinhander<br/><br/>Gran espadon de doble filo y formidable poder<br/>Es increiblemente pesada<br/>No recomendable llevar una maraton :p<html>");
 				}else if(command == "TArmadura1"){
 					OpcionTie = BtnArmaduraT1.getText();
@@ -853,6 +684,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Armadura1.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura1.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura1.PrecioV)+"$");
+					muestraStatsB(Armadura1.Defensa,Armadura1.Salud,Armadura1.Peso);
 					Descripcion.setText("<html>Cota de Malla<br/><br/>No creo que sea tan segura ya que parece cortado<br/>de una reja vieja y oxidada<html>");
 				}else if(command == "TArmadura2"){
 					OpcionTie =  BtnArmaduraT2.getText();
@@ -874,7 +706,8 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Armadura2.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
-					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber da�o<br/>Mucho cuidado con la insolacion");
+					muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
+					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y gran poder para absorber dano<br/>Mucho cuidado con la insolacion");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
 					BtnArmaT1.setBackground(new Color(0, 51, 0));
@@ -895,6 +728,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Armadura3.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura3.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura3.PrecioV)+"$");
+					muestraStatsB(Armadura3.Defensa,Armadura3.Salud,Armadura3.Peso);
 					Descripcion.setText("<html>Bata Oscura<br/><br/>Esta bata absorbe tu energia vital a cambio de mayor<br/>defensa y magia pero te hace parecer sospechoso...<br/>No la lleves a una sesion de Among Us<html>");
 				}else if(command == "TArmadura4"){
 					OpcionTie =  BtnArmaduraT4.getText();
@@ -916,6 +750,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Armadura4.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura4.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura4.PrecioV)+"$");
+					muestraStatsB(Armadura4.Defensa,Armadura4.Salud,Armadura4.Peso);
 					Descripcion.setText("<html>Capa Angelical<br/><br/>Una capa forgada por los angeles que otorga mucha <br/>defensa y vida a cambio de menor ataque<br/>Perfecta si eres un healer main<html>");
 				}else if(command == "TArmadura5"){
 					OpcionTie =  BtnArmaduraT5.getText();
@@ -937,6 +772,7 @@ public class GUI extends JFrame implements ActionListener {
 					OpCompra=Armadura5.PrecioC;
 					lblPrecioC.setText("Precio: "+String.valueOf(Armadura5.PrecioC)+"$");
 					lblPrecioV.setText("Venta: "+String.valueOf(Armadura5.PrecioV)+"$");
+					muestraStatsB(Armadura5.Defensa,Armadura5.Salud,Armadura5.Peso);
 					Descripcion.setText("<html>Placa Paladin<br/><br/>Muro impenetrable de la fe<br/>pero al igual que un muro no te puedes mover<br/>Tambien posee defensa formidable<html>");
 				}else if(command == "TConsumible1"){
 					OpcionTie = BtnConsumibleT1.getText();
@@ -1382,7 +1218,7 @@ public class GUI extends JFrame implements ActionListener {
 		StatAtk.setIcon(new ImageIcon(GUI.class.getResource("/App/Attack Indicator.png")));
 		StatAtk.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		StatAtk.setForeground(Color.RED);
-		StatAtk.setBounds(59, 24, 89, 35);
+		StatAtk.setBounds(31, 24, 103, 35);
 		PanelStats.add(StatAtk);
 		
 		StatDfs = new JLabel();
@@ -1390,7 +1226,7 @@ public class GUI extends JFrame implements ActionListener {
 		StatDfs.setIcon(new ImageIcon(GUI.class.getResource("/App/Defense Indicator.png")));
 		StatDfs.setForeground(Color.MAGENTA);
 		StatDfs.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		StatDfs.setBounds(59, 69, 89, 35);
+		StatDfs.setBounds(31, 69, 103, 35);
 		PanelStats.add(StatDfs);
 		
 		StatMna = new JLabel();
@@ -1398,7 +1234,7 @@ public class GUI extends JFrame implements ActionListener {
 		StatMna.setIcon(new ImageIcon(GUI.class.getResource("/App/Mana Indicator.png")));
 		StatMna.setForeground(new Color(102, 102, 255));
 		StatMna.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		StatMna.setBounds(167, 24, 89, 35);
+		StatMna.setBounds(144, 24, 112, 35);
 		PanelStats.add(StatMna);
 		
 		StatSpd = new JLabel();
@@ -1406,7 +1242,7 @@ public class GUI extends JFrame implements ActionListener {
 		StatSpd.setIcon(new ImageIcon(GUI.class.getResource("/App/Speed Indicator.png")));
 		StatSpd.setForeground(Color.CYAN);
 		StatSpd.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		StatSpd.setBounds(167, 69, 89, 35);
+		StatSpd.setBounds(144, 69, 112, 35);
 		PanelStats.add(StatSpd);
 		
 		StatHlth = new JLabel();
@@ -1414,16 +1250,16 @@ public class GUI extends JFrame implements ActionListener {
 		StatHlth.setIcon(new ImageIcon(GUI.class.getResource("/App/Health Indicator.png")));
 		StatHlth.setForeground(new Color(255, 153, 255));
 		StatHlth.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		StatHlth.setBounds(279, 24, 89, 35);
+		StatHlth.setBounds(266, 24, 136, 35);
 		PanelStats.add(StatHlth);
 		
-		StatHlth_1 = new JLabel();
-		StatHlth_1.setIcon(new ImageIcon(GUI.class.getResource("/App/Weight Indicator.png")));
-		StatHlth_1.setText("0");
-		StatHlth_1.setForeground(Color.ORANGE);
-		StatHlth_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		StatHlth_1.setBounds(279, 69, 89, 35);
-		PanelStats.add(StatHlth_1);
+		StatWgt = new JLabel();
+		StatWgt.setIcon(new ImageIcon(GUI.class.getResource("/App/Weight Indicator.png")));
+		StatWgt.setText(String.valueOf(personaje.Peso));
+		StatWgt.setForeground(Color.ORANGE);
+		StatWgt.setFont(new Font("Tahoma", Font.PLAIN, 15));
+		StatWgt.setBounds(266, 69, 136, 35);
+		PanelStats.add(StatWgt);
 		
 		JPanel PanelDesc = new JPanel();
 		sl_PanelGeneral.putConstraint(SpringLayout.NORTH, PanelDesc, 6, SpringLayout.SOUTH, PanelTienda);
@@ -1846,4 +1682,91 @@ public class GUI extends JFrame implements ActionListener {
 			}
 		}
 	}
+	public static void muestraStatsA(Integer ataque,Integer magia,Integer velocidad) {
+		if (!(lblArma.getText()).equals("Arma:")) {
+			if (ataque != 0) {
+				StatAtk.setText(personaje.Ataque +" "+( AtkBase+ataque-personaje.Ataque));
+			}else {
+				StatAtk.setText(personaje.Ataque+"");
+			}
+			if (velocidad != 0) {
+				StatSpd.setText(personaje.Velocidad+" "+( SpdBase+velocidad-personaje.Velocidad));
+			}else {
+				StatSpd.setText(personaje.Velocidad+"");
+			}
+			StatHlth.setText(personaje.Vida+"");
+			StatDfs.setText(personaje.Defensa+"");
+			if (magia != 0) {
+				StatMna.setText(personaje.Mana+" "+( MnaBase+magia-personaje.Mana));
+			}else {
+				StatMna.setText(personaje.Mana+"");
+			}
+		}else {
+			if (ataque != 0) {
+				StatAtk.setText(personaje.Ataque+" +"+ataque);
+			}else {
+				StatAtk.setText(personaje.Ataque+"");
+			}
+			if (velocidad != 0) {
+				if (velocidad<0) {
+					StatSpd.setText(personaje.Velocidad+" "+velocidad);
+				}else {
+				StatSpd.setText(personaje.Velocidad+" +"+velocidad);}
+			}else {
+				StatSpd.setText(personaje.Velocidad+"");
+			}
+			StatHlth.setText(personaje.Vida+"");
+			StatDfs.setText(personaje.Defensa+"");
+			if (magia != 0) {
+				if (magia<0) {
+					StatMna.setText(personaje.Mana+" "+magia);
+				}else {
+				StatMna.setText(personaje.Mana+" +"+magia);}
+			}else {
+				StatMna.setText(personaje.Mana+"");
+			}
+		}
+	}
+	public static void muestraStatsB(Integer defensa,Integer salud,Integer peso) {
+		if (!(lblArmadura.getText()).equals("Armadura:")) {
+			if (defensa != 0) {
+				StatDfs.setText(personaje.Defensa +" "+( DfsBase+defensa-personaje.Defensa));
+			}else {
+				StatDfs.setText(personaje.Defensa+"");
+			}
+			if (salud != 0) {
+				StatHlth.setText(personaje.Vida+" "+( HltBase+salud-personaje.Vida));
+			}else {
+				StatHlth.setText(personaje.Vida+"");
+			}
+			StatAtk.setText(personaje.Ataque+"");
+			StatSpd.setText(personaje.Velocidad+"");
+			if (peso != 0) {
+				StatWgt.setText(personaje.Peso+" "+( WgtBase+peso-personaje.Peso));
+			}else {
+				StatWgt.setText(personaje.Peso+"");
+			}
+		}else {
+			if (defensa != 0) {
+				StatDfs.setText(personaje.Defensa+" +"+defensa);
+			}else {
+				StatDfs.setText(personaje.Defensa+"");
+			}
+			if (salud != 0) {
+				StatHlth.setText(personaje.Vida+" +"+salud);
+			}else {
+				StatHlth.setText(personaje.Vida+"");
+			}
+			StatAtk.setText(personaje.Ataque+"");
+			StatSpd.setText(personaje.Velocidad+"");
+			if (peso != 0) {
+				StatWgt.setText(personaje.Peso+" +"+peso);
+			}else {
+				StatWgt.setText(personaje.Peso+"");
+			}
+		}
+	}
 }
+		
+	
+
