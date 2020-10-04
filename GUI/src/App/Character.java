@@ -222,36 +222,36 @@ public class Character {
         	}
         }
     }
-    public static void Equipar(String opcion) {
+    public static void Equipar(String opcion,Integer Stat1,Integer Stat2,Integer Stat3) {
     	if (opcion.equals("IArma1")) {
-    		GUI.cambiaEquip("Bate de Metal",1);
+    		GUI.cambiaEquip("Bate de Metal",1,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArma2")) {
-    		GUI.cambiaEquip("Daga Siniestra",1);
+    		GUI.cambiaEquip("Daga Siniestra",1,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArma3")) {
-    		GUI.cambiaEquip("Guante Magico",1);
+    		GUI.cambiaEquip("Guante Magico",1,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArma4")) {
-    		GUI.cambiaEquip("Lanza Oscura",1);
+    		GUI.cambiaEquip("Lanza Oscura",1,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArma5")) {
-    		GUI.cambiaEquip("Zweihander",1);
+    		GUI.cambiaEquip("Zweihander",1,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArmadura1")) {
-    		GUI.cambiaEquip("Cota de Malla",2);
+    		GUI.cambiaEquip("Cota de Malla",2,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArmadura2")) {
-    		GUI.cambiaEquip("Chaqueta Pesada",2);
+    		GUI.cambiaEquip("Chaqueta Pesada",2,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArmadura3")) {
-    		GUI.cambiaEquip("Bata Oscura",2);
+    		GUI.cambiaEquip("Bata Oscura",2,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArmadura4")) {
-    		GUI.cambiaEquip("Capa Angelical",2);
+    		GUI.cambiaEquip("Capa Angelical",2,Stat1,Stat2,Stat3);
     	}
     	else if (opcion.equals("IArmadura5")) {
-    		GUI.cambiaEquip("Placa Paladin",2);
+    		GUI.cambiaEquip("Placa Paladin",2,Stat1,Stat2,Stat3);
     	}
     }
     //Metodo para definir los atributos de los objetos
