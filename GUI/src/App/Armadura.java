@@ -7,7 +7,7 @@ public class Armadura {
     public int PrecioV;
     public int Defensa;
     public int Salud;
-    public int Velocidad;
+    public int Peso;
     
     //Metodo para definir los atributos de los objetos
     public static void main(String[] args) {
