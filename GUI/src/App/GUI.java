@@ -1687,7 +1687,7 @@ public class GUI extends JFrame implements ActionListener {
 		}else if (num.equals("6")){
 			BtnArmaduraI1.setText(texto);
 			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Cota de Malla")  ) {
-				lblArmadura.setText("Armadura: ");
+				lblArmadura.setText("Armadura:");
 				personaje.Defensa=DfsBase;
 				personaje.Vida=HltBase;
 				personaje.Peso=WgtBase;
@@ -1698,7 +1698,7 @@ public class GUI extends JFrame implements ActionListener {
 		}else if(num.equals("7")){
 			BtnArmaduraI2.setText(texto);
 			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Chaqueta Pesada")  ) {
-				lblArmadura.setText("Armadura: ");
+				lblArmadura.setText("Armadura:");
 				personaje.Defensa=DfsBase;
 				personaje.Vida=HltBase;
 				personaje.Peso=WgtBase;
@@ -1709,7 +1709,7 @@ public class GUI extends JFrame implements ActionListener {
 		}else if(num.equals("8")){
 			BtnArmaduraI3.setText(texto);
 			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Bata Oscura")  ) {
-				lblArmadura.setText("Armadura: ");
+				lblArmadura.setText("Armadura:");
 				personaje.Defensa=DfsBase;
 				personaje.Vida=HltBase;
 				personaje.Peso=WgtBase;
@@ -1720,7 +1720,7 @@ public class GUI extends JFrame implements ActionListener {
 		}else if(num.equals("9")){
 			BtnArmaduraI4.setText(texto);
 			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Capa Angelical")  ) {
-				lblArmadura.setText("Armadura: ");
+				lblArmadura.setText("Armadura:");
 				personaje.Defensa=DfsBase;
 				personaje.Vida=HltBase;
 				personaje.Peso=WgtBase;
@@ -1731,7 +1731,7 @@ public class GUI extends JFrame implements ActionListener {
 		}else if(num.equals("10")){
 			BtnArmaduraI5.setText(texto);
 			if(texto.equals("") & lblArmadura.getText().equals("Armadura: Placa Paladin")  ) {
-				lblArmadura.setText("Armadura: ");
+				lblArmadura.setText("Armadura:");
 				personaje.Defensa=DfsBase;
 				personaje.Vida=HltBase;
 				personaje.Peso=WgtBase;
@@ -1781,21 +1781,34 @@ public class GUI extends JFrame implements ActionListener {
 	public static void muestraStatsA(Integer ataque,Integer magia,Integer velocidad) {
 		if (!(lblArma.getText()).equals("Arma:")) {
 			if (ataque != 0) {
-				StatAtk.setText(personaje.Ataque +" "+( AtkBase+ataque-personaje.Ataque));
+				if (ataque<personaje.Ataque-AtkBase) {
+					StatAtk.setText(personaje.Ataque +" "+( AtkBase+ataque-personaje.Ataque));
+				}else{
+					StatAtk.setText(personaje.Ataque +" +"+( AtkBase+ataque-personaje.Ataque));
+				}
 			}else {
-				StatAtk.setText(personaje.Ataque+"");
+				StatAtk.setText(personaje.Ataque+" -"+(personaje.Ataque-AtkBase));
 			}
 			if (velocidad != 0) {
-				StatSpd.setText(personaje.Velocidad+" "+( SpdBase+velocidad-personaje.Velocidad));
+				if (velocidad<personaje.Velocidad-SpdBase) {
+					StatSpd.setText(personaje.Velocidad+" "+( SpdBase+velocidad-personaje.Velocidad));
+				}else {
+					StatSpd.setText(personaje.Velocidad+" +"+( SpdBase+velocidad-personaje.Velocidad));
+				}
 			}else {
-				StatSpd.setText(personaje.Velocidad+"");
+				StatSpd.setText(personaje.Velocidad+" -"+(personaje.Velocidad-SpdBase));
 			}
 			StatHlth.setText(personaje.Vida+"");
 			StatDfs.setText(personaje.Defensa+"");
+			StatWgt.setText(personaje.Peso+"");
 			if (magia != 0) {
-				StatMna.setText(personaje.Mana+" "+( MnaBase+magia-personaje.Mana));
+				if (magia<personaje.Mana-MnaBase) {
+					StatMna.setText(personaje.Mana+" "+( MnaBase+magia-personaje.Mana));
+				}else {
+					StatMna.setText(personaje.Mana+" +"+( MnaBase+magia-personaje.Mana));
+				}
 			}else {
-				StatMna.setText(personaje.Mana+"");
+				StatMna.setText(personaje.Mana+" -"+(personaje.Mana-MnaBase));
 			}
 		}else {
 			if (ataque != 0) {
@@ -1813,6 +1826,7 @@ public class GUI extends JFrame implements ActionListener {
 			}
 			StatHlth.setText(personaje.Vida+"");
 			StatDfs.setText(personaje.Defensa+"");
+			StatWgt.setText(personaje.Peso+"");
 			if (magia != 0) {
 				if (magia<0) {
 					StatMna.setText(personaje.Mana+" "+magia);
@@ -1826,30 +1840,31 @@ public class GUI extends JFrame implements ActionListener {
 	public static void muestraStatsB(Integer defensa,Integer salud,Integer peso) {
 		if (!(lblArmadura.getText()).equals("Armadura:")) {
 			if (defensa != 0) {
-				if (defensa<personaje.Defensa) {
+				if (defensa<personaje.Defensa-DfsBase) {
 					StatDfs.setText(personaje.Defensa +" "+( DfsBase+defensa-personaje.Defensa));
 				}else {
 				StatDfs.setText(personaje.Defensa +" +"+( DfsBase+defensa-personaje.Defensa));}
 			}else {
-				StatDfs.setText(personaje.Defensa+"");
+				StatDfs.setText(personaje.Defensa+" "+( DfsBase-personaje.Defensa));
 			}
 			if (salud != 0) {
-				if (salud<personaje.Vida) {
+				if (salud<personaje.Vida-HltBase) {
 					StatHlth.setText(personaje.Vida+" "+( HltBase+salud-personaje.Vida));
 				}else {
 				StatHlth.setText(personaje.Vida+" +"+( HltBase+salud-personaje.Vida));}
 			}else {
-				StatHlth.setText(personaje.Vida+"");
+				StatHlth.setText(personaje.Vida+" "+( HltBase-personaje.Vida));
 			}
 			StatAtk.setText(personaje.Ataque+"");
 			StatSpd.setText(personaje.Velocidad+"");
+			StatMna.setText(personaje.Mana+"");
 			if (peso != 0) {
-				if (peso<personaje.Peso) {
+				if (peso<personaje.Peso-WgtBase) {
 					StatWgt.setText(personaje.Peso+" "+( WgtBase+peso-personaje.Peso));
 				}else {
 				StatWgt.setText(personaje.Peso+" +"+( WgtBase+peso-personaje.Peso));}
 			}else {
-				StatWgt.setText(personaje.Peso+"");
+				StatWgt.setText(personaje.Peso+" "+( WgtBase-personaje.Peso));
 			}
 		}else {
 			if (defensa != 0) {
@@ -1858,12 +1873,17 @@ public class GUI extends JFrame implements ActionListener {
 				StatDfs.setText(personaje.Defensa+"");
 			}
 			if (salud != 0) {
-				StatHlth.setText(personaje.Vida+" +"+salud);
+				if (salud<0) {
+					StatHlth.setText(personaje.Vida+" "+salud);
+				}else {
+					StatHlth.setText(personaje.Vida+" +"+salud);
+				}
 			}else {
 				StatHlth.setText(personaje.Vida+"");
 			}
 			StatAtk.setText(personaje.Ataque+"");
 			StatSpd.setText(personaje.Velocidad+"");
+			StatMna.setText(personaje.Mana+"");
 			if (peso != 0) {
 				StatWgt.setText(personaje.Peso+" +"+peso);
 			}else {
