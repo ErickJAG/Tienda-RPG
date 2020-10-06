@@ -162,7 +162,6 @@ public class GUI extends JFrame implements ActionListener {
         Arma5.PrecioC=Armas.DefinirAtributoArma("5", APIarmas);
         Arma5.PrecioV=Arma5.PrecioC/5;
         Armadura Armadura1 = new Armadura();
-        System.out.println(JArmadura);
         Armadura1.Salud=0;
         Armadura1.Defensa=(int)(JArmadura.getJSONArray("products").getJSONObject(0).getJSONObject("reviews").getInt("rating"))*5;
         Armadura1.Peso=(int)(JArmadura.getJSONArray("products").getJSONObject(0).getJSONObject("reviews").getInt("rating"))*7;
@@ -230,8 +229,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaI1.getActionCommand();
 						OpVenta=Arma1.PrecioV;
 						muestraStatsA(Arma1.Ataque,Arma1.Magia,Arma1.Velocidad);
-						lblPrecioC.setText("Precio: "+String.valueOf(Arma1.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Arma1.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Arma1.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Arma1.PrecioV));
 						Descripcion.setText("<html>Bate de Metal<br/><br/>Es un bate... pero de metal... creo que es obvio<br/>No es ligero pero tampoco pesado<html>");
 						
 					}
@@ -255,8 +254,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaI2.getActionCommand();
 						OpVenta=Arma2.PrecioV;
 						muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
-						lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Arma2.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Arma2.PrecioV));
 						Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 					}
 				}else if(command == "IArma3"){
@@ -279,8 +278,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaI3.getActionCommand();
 						OpVenta=Arma3.PrecioV;
 						muestraStatsA(Arma3.Ataque,Arma3.Magia,Arma3.Velocidad);
-						lblPrecioC.setText("Precio: "+String.valueOf(Arma3.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Arma3.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Arma3.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Arma3.PrecioV));
 						Descripcion.setText("<html>Guante Magico<br/><br/>Un guante que por si solo no es muy fuerte<br/>Pero su poder magico boostea el poder de tus hechizos<html>");
 					}
 				}else if(command == "IArma4"){
@@ -303,8 +302,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaI4.getActionCommand();
 						OpVenta=Arma4.PrecioV;
 						muestraStatsA(Arma4.Ataque,Arma4.Magia,Arma4.Velocidad);
-						lblPrecioC.setText("Precio: "+String.valueOf(Arma4.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Arma4.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Arma4.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Arma4.PrecioV));
 						Descripcion.setText("<html>Lanza Oscura<br/><br/>Un arma de alto poder que conlleva un precio a pagar<br/>Su poder oscuro te rebaja tu poder de magia<br/>pero tiene mucho poder fisico a cambio<html>");
 					}
 				}else if(command == "IArma5"){
@@ -327,8 +326,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaI5.getActionCommand();
 						OpVenta=Arma5.PrecioV;
 						muestraStatsA(Arma5.Ataque,Arma5.Magia,Arma5.Velocidad);
-						lblPrecioC.setText("Precio: "+String.valueOf(Arma5.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Arma5.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Arma5.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Arma5.PrecioV));
 						Descripcion.setText("<html>Zweinhander<br/><br/>Gran espadon de doble filo y formidable poder<br/>Es increiblemente pesada<br/>No recomendable llevar una maraton :p<html>");
 					}
 				}else if(command == "IArmadura1"){
@@ -351,8 +350,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaduraI1.getActionCommand();
 						OpVenta=Armadura1.PrecioV;
 						muestraStatsB(Armadura1.Defensa,Armadura1.Salud,Armadura1.Peso);
-						lblPrecioC.setText("Precio: "+String.valueOf(Armadura1.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Armadura1.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Armadura1.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Armadura1.PrecioV));
 						Descripcion.setText("<html>Cota de Malla<br/><br/>No creo que sea tan segura ya que parece cortado<br/>de una reja vieja y oxidada<html>");
 					}
 				}else if(command == "IArmadura2"){
@@ -375,8 +374,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaduraI2.getActionCommand();
 						OpVenta=Armadura2.PrecioV;
 						muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
-						lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Armadura2.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Armadura2.PrecioV));
 						Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y absorcion de ataques enemigos<br/>Mucho cuidado con los golpes de calor");
 					}
 				}else if(command == "IArmadura3"){
@@ -399,8 +398,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaduraI3.getActionCommand();
 						OpVenta=Armadura3.PrecioV;
 						muestraStatsB(Armadura3.Defensa,Armadura3.Salud,Armadura3.Peso);
-						lblPrecioC.setText("Precio: "+String.valueOf(Armadura3.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Armadura3.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Armadura3.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Armadura3.PrecioV));
 						Descripcion.setText("<html>Bata Oscura<br/><br/>Esta bata absorbe tu energia vital a cambio de mayor<br/>defensa y magia pero te hace parecer sospechoso...<br/>No la lleves a una sesion de Among Us<html>");
 					}
 				}else if(command == "IArmadura4"){
@@ -423,8 +422,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaduraI4.getActionCommand();
 						OpVenta=Armadura4.PrecioV;
 						muestraStatsB(Armadura4.Defensa,Armadura4.Salud,Armadura4.Peso);
-						lblPrecioC.setText("Precio: "+String.valueOf(Armadura4.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Armadura4.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Armadura4.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Armadura4.PrecioV));
 						Descripcion.setText("<html>Capa Angelical<br/><br/>Una capa forgada por los angeles que otorga mucha <br/> vida a cambio de 0 defensa<br/>Perfecta si eres un healer main<html>");
 					}
 				}else if(command == "IArmadura5"){
@@ -447,8 +446,8 @@ public class GUI extends JFrame implements ActionListener {
 						OpcionInv = BtnArmaduraI5.getActionCommand();
 						OpVenta=Armadura5.PrecioV;
 						muestraStatsB(Armadura5.Defensa,Armadura5.Salud,Armadura5.Peso);
-						lblPrecioC.setText("Precio: "+String.valueOf(Armadura5.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Armadura5.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Armadura5.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Armadura5.PrecioV));
 						Descripcion.setText("<html>Placa Paladin<br/><br/>Muro impenetrable de la fe<br/>pero al igual que un muro no te puedes mover<br/>Tambien posee defensa formidable<html>");
 					}
 				}else if(command == "IConsumible1"){
@@ -470,8 +469,9 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnConsumibleI1.getActionCommand();
 						OpVenta=Consumible1.PrecioV;
-						lblPrecioC.setText("Precio: "+String.valueOf(Consumible1.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Consumible1.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Consumible1.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Consumible1.PrecioV));
+						muestraStatsC();
 						Descripcion.setText("<html>Medicina<br/><br/>Item basico de cualquier aventurero que por alguna<br/>razon sabe a menta... pero su frescura recupera 50HP<html>");
 					}
 				}else if(command == "IConsumible2"){
@@ -493,8 +493,9 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnConsumibleI2.getActionCommand();
 						OpVenta=Consumible2.PrecioV;
-						lblPrecioC.setText("Precio: "+String.valueOf(Consumible2.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Consumible2.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Consumible2.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Consumible2.PrecioV));
+						muestraStatsC();
 						Descripcion.setText("<html>Pocion de Mana<br/><br/>Por alguna razon tiene sabor a jugo de arandano...<br/>A pesar de su tentador sabor esta recupera 50MP<html>");
 					}
 				}else if(command == "IConsumible3"){
@@ -516,8 +517,9 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnConsumibleI3.getActionCommand();
 						OpVenta=Consumible3.PrecioV;
-						lblPrecioC.setText("Precio: "+String.valueOf(Consumible3.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Consumible3.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Consumible3.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Consumible3.PrecioV));
+						muestraStatsC();
 						Descripcion.setText("<html>Gema reflectora<br/><br/>Reflecta el siguiente ataque a un enemigo<br/>duplicando su poder AKA Uno_reverse_card.mp4<html>");
 					}
 				}else if(command == "IConsumible4"){
@@ -539,8 +541,9 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(0, 51, 0));
 						OpcionInv = BtnConsumibleI4.getActionCommand();
 						OpVenta=Consumible4.PrecioV;
-						lblPrecioC.setText("Precio: "+String.valueOf(Consumible4.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Consumible4.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Consumible4.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Consumible4.PrecioV));
+						muestraStatsC();
 						Descripcion.setText("<html>1-UP<br/><br/>Ultima linea de supervivencia otorga una vida<br/>extra... solo no le digas a Nintendo sobre esto ok?<html>");
 					}
 				}else if(command == "IConsumible5"){
@@ -562,8 +565,9 @@ public class GUI extends JFrame implements ActionListener {
 						BtnConsumibleI5.setBackground(new Color(102, 0, 255));
 						OpcionInv = BtnConsumibleI5.getActionCommand();
 						OpVenta=Consumible5.PrecioV;
-						lblPrecioC.setText("Precio: "+String.valueOf(Consumible5.PrecioC)+"$");
-						lblPrecioV.setText("Venta: "+String.valueOf(Consumible5.PrecioV)+"$");
+						lblPrecioC.setText("Precio: $"+String.valueOf(Consumible5.PrecioC));
+						lblPrecioV.setText("Venta: $"+String.valueOf(Consumible5.PrecioV));
+						muestraStatsC();
 						Descripcion.setText("<html>Restaurador<br/><br/>Gema magica que elimina los efectos negativos<br/>a tus stats generados por el enemigo<br/>No hay broma solo es eso...<html>");
 					}
 				}else if (command == "TArma1"){
@@ -585,8 +589,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Arma1.PrecioC;
 					muestraStatsA(Arma1.Ataque,Arma1.Magia,Arma1.Velocidad);
-					lblPrecioC.setText("Precio: "+String.valueOf(Arma1.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Arma1.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Arma1.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Arma1.PrecioV));
 					Descripcion.setText("<html>Bate de Metal<br/><br/>Es un bate... pero de metal... creo que es obvio<br/>No es ligero pero tampoco pesado<html>");
 				}else if(command == "TArma2"){
 					OpcionTie = BtnArmaT2.getText();
@@ -607,8 +611,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Arma2.PrecioC;
 					muestraStatsA(Arma2.Ataque,Arma2.Magia,Arma2.Velocidad);
-					lblPrecioC.setText("Precio: "+String.valueOf(Arma2.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Arma2.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Arma2.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Arma2.PrecioV));
 					Descripcion.setText("<html>Daga Siniestra<br/><br/>Una daga muy misteriosa pero por su tamano esta<br/>logra otorgar gran agilidad<html>");
 				}else if(command == "TArma3"){
 					OpcionTie = BtnArmaT3.getText();
@@ -629,8 +633,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Arma3.PrecioC;
 					muestraStatsA(Arma3.Ataque,Arma3.Magia,Arma3.Velocidad);
-					lblPrecioC.setText("Precio: "+String.valueOf(Arma3.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Arma3.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Arma3.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Arma3.PrecioV));
 					Descripcion.setText("<html>Guante Magico<br/><br/>Un guante que por si solo no es muy fuerte<br/>Pero su poder magico boostea el poder de tus hechizos<html>");
 				}else if(command == "TArma4"){
 					OpcionTie = BtnArmaT4.getText();
@@ -651,8 +655,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Arma4.PrecioC;
 					muestraStatsA(Arma4.Ataque,Arma4.Magia,Arma4.Velocidad);
-					lblPrecioC.setText("Precio: "+String.valueOf(Arma4.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Arma4.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Arma4.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Arma4.PrecioV));
 					Descripcion.setText("<html>Lanza Oscura<br/><br/>Un arma de alto poder que conlleva un precio a pagar<br/>Su poder oscuro te rebaja tu poder de magia<br/>pero tiene mucho poder fisico a cambio<html>");
 					
 				}else if(command == "TArma5"){
@@ -674,8 +678,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Arma5.PrecioC;
 					muestraStatsA(Arma5.Ataque,Arma5.Magia,Arma5.Velocidad);
-					lblPrecioC.setText("Precio: "+String.valueOf(Arma5.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Arma5.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Arma5.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Arma5.PrecioV));
 					Descripcion.setText("<html>Zweinhander<br/><br/>Gran espadon de doble filo y formidable poder<br/>Es increiblemente pesada<br/>No recomendable llevar una maraton :p<html>");
 				}else if(command == "TArmadura1"){
 					OpcionTie = BtnArmaduraT1.getText();
@@ -696,8 +700,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Armadura1.PrecioC;
 					muestraStatsB(Armadura1.Defensa,Armadura1.Salud,Armadura1.Peso);
-					lblPrecioC.setText("Precio: "+String.valueOf(Armadura1.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Armadura1.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Armadura1.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Armadura1.PrecioV));
 					Descripcion.setText("<html>Cota de Malla<br/><br/>No creo que sea tan segura ya que parece cortado<br/>de una reja vieja y oxidada<html>");
 				}else if(command == "TArmadura2"){
 					OpcionTie =  BtnArmaduraT2.getText();
@@ -718,8 +722,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Armadura2.PrecioC;
 					muestraStatsB(Armadura2.Defensa,Armadura2.Salud,Armadura2.Peso);
-					lblPrecioC.setText("Precio: "+String.valueOf(Armadura2.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Armadura2.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Armadura2.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Armadura2.PrecioV));
 					Descripcion.setText("<html>Chaqueta Pesada<br/><br/> Chaqueta con alto peso y absorcion de ataques enemigos<br/>Mucho cuidado con los golpes de calor");
 				}else if(command == "TArmadura3"){
 					OpcionTie =  BtnArmaduraT3.getText();
@@ -740,8 +744,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Armadura3.PrecioC;
 					muestraStatsB(Armadura3.Defensa,Armadura3.Salud,Armadura3.Peso);
-					lblPrecioC.setText("Precio: "+String.valueOf(Armadura3.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Armadura3.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Armadura3.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Armadura3.PrecioV));
 					Descripcion.setText("<html>Bata Oscura<br/><br/>Esta bata absorbe tu energia vital a cambio de mayor<br/>defensa y magia pero te hace parecer sospechoso...<br/>No la lleves a una sesion de Among Us<html>");
 				}else if(command == "TArmadura4"){
 					OpcionTie =  BtnArmaduraT4.getText();
@@ -762,8 +766,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Armadura4.PrecioC;
 					muestraStatsB(Armadura4.Defensa,Armadura4.Salud,Armadura4.Peso);
-					lblPrecioC.setText("Precio: "+String.valueOf(Armadura4.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Armadura4.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Armadura4.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Armadura4.PrecioV));
 					Descripcion.setText("<html>Capa Angelical<br/><br/>Una capa forgada por los angeles que otorga mucha <br/> vida a cambio de 0 defensa<br/>Perfecta si eres un healer main<html>");
 				}else if(command == "TArmadura5"){
 					OpcionTie =  BtnArmaduraT5.getText();
@@ -784,8 +788,8 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Armadura5.PrecioC;
 					muestraStatsB(Armadura5.Defensa,Armadura5.Salud,Armadura5.Peso);
-					lblPrecioC.setText("Precio: "+String.valueOf(Armadura5.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Armadura5.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Armadura5.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Armadura5.PrecioV));
 					Descripcion.setText("<html>Placa Paladin<br/><br/>Muro impenetrable de la fe<br/>pero al igual que un muro no te puedes mover<br/>Tambien posee defensa formidable<html>");
 				}else if(command == "TConsumible1"){
 					OpcionTie = BtnConsumibleT1.getText();
@@ -805,8 +809,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Consumible1.PrecioC;
-					lblPrecioC.setText("Precio: "+String.valueOf(Consumible1.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Consumible1.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Consumible1.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Consumible1.PrecioV));
+					muestraStatsC();
 					Descripcion.setText("<html>Medicina<br/><br/>Item basico de cualquier aventurero que por alguna<br/>razon sabe a menta... pero su frescura recupera 50HP<html>");
 				}else if(command == "TConsumible2"){
 					OpcionTie = BtnConsumibleT2.getText();
@@ -826,8 +831,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Consumible2.PrecioC;
-					lblPrecioC.setText("Precio: "+String.valueOf(Consumible2.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Consumible2.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Consumible2.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Consumible2.PrecioV));
+					muestraStatsC();
 					Descripcion.setText("<html>Pocion de Mana<br/><br/>Por alguna razon tiene sabor a jugo de arandano...<br/>A pesar de su tentador sabor esta recupera 50MP<html>");
 				}else if(command == "TConsumible3"){
 					OpcionTie = BtnConsumibleT3.getText();
@@ -847,8 +853,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Consumible3.PrecioC;
-					lblPrecioC.setText("Precio: "+String.valueOf(Consumible3.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Consumible3.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Consumible3.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Consumible3.PrecioV));
+					muestraStatsC();
 					Descripcion.setText("<html>Gema reflectora<br/><br/>Reflecta el siguiente ataque a un enemigo<br/>duplicando su poder AKA Uno_reverse_card.mp4<html>");
 				}else if(command == "TConsumible4"){
 					OpcionTie = BtnConsumibleT4.getText();
@@ -868,8 +875,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(102, 0, 255));
 					BtnConsumibleT5.setBackground(new Color(0, 51, 0));
 					OpCompra=Consumible4.PrecioC;
-					lblPrecioC.setText("Precio: "+String.valueOf(Consumible4.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Consumible4.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Consumible4.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Consumible4.PrecioV));
+					muestraStatsC();
 					Descripcion.setText("<html>1-UP<br/><br/>Ultima linea de supervivencia otorga una vida<br/>extra... solo no le digas a Nintendo sobre esto ok?<html>");
 				}else if(command == "TConsumible5"){
 					OpcionTie = BtnConsumibleT5.getText();
@@ -889,8 +897,9 @@ public class GUI extends JFrame implements ActionListener {
 					BtnConsumibleT4.setBackground(new Color(0, 51, 0));
 					BtnConsumibleT5.setBackground(new Color(102, 0, 255));
 					OpCompra=Consumible5.PrecioC;
-					lblPrecioC.setText("Precio: "+String.valueOf(Consumible5.PrecioC)+"$");
-					lblPrecioV.setText("Venta: "+String.valueOf(Consumible5.PrecioV)+"$");
+					lblPrecioC.setText("Precio: $"+String.valueOf(Consumible5.PrecioC));
+					lblPrecioV.setText("Venta: $"+String.valueOf(Consumible5.PrecioV));
+					muestraStatsC();
 					Descripcion.setText("<html>Restaurador<br/><br/>Gema magica que elimina los efectos negativos<br/>a tus stats generados por el enemigo<br/>No hay broma solo es eso...<html>");
 				}else if(command == "Equip" & ! OpcionInv.equals("")){
 					if(OpcionInv.equals("IArma1")) {
@@ -1899,4 +1908,15 @@ public class GUI extends JFrame implements ActionListener {
 			}
 		}
 	}
+	public static void muestraStatsC() {
+		StatDfs.setText(personaje.Defensa+"");
+		StatWgt.setText(personaje.Peso+"");
+		StatHlth.setText(personaje.Vida+"");
+		StatAtk.setText(personaje.Ataque+"");
+		StatSpd.setText(personaje.Velocidad+"");
+		StatMna.setText(personaje.Mana+"");
+	}
 }
+		
+	
+
