@@ -1,5 +1,7 @@
 package App;
 
+import org.json.JSONObject;
+
 public class Armadura {
 
     //atributos
@@ -9,7 +11,37 @@ public class Armadura {
     public int Salud;
     public int Peso;
     
-    //Metodo para definir los atributos de los objetos
-    public static void main(String[] args) {
+    
+    public static int DefinirAtributoArmadura (String Opcion, String API) {
+    	JSONObject InfoAPI = new JSONObject(API);
+    	int valor=0;
+    	int result=0;
+    	for(int i=0;i<250;i=i+1) {
+    		valor=InfoAPI.getJSONArray("products").getJSONObject(i).getJSONObject("reviews").getInt("rating");
+    		if (Opcion.equals("1") & result==0) {
+    			if (valor<10 & valor>4) {
+    				result = valor;
+    			}
+    		}else if (Opcion.equals("2") & result==0) {
+    			if (valor<30 & valor>10) {
+    				result = valor;
+    			}
+    		}if (Opcion.equals("3") & result==0) {
+    			if (valor<50 & valor>30) {
+    				result = valor;
+    			}
+    		}if (Opcion.equals("4") & result==0) {
+    			if (valor<80 & valor>50) {
+    				result = valor;
+    			}
+    		}if (Opcion.equals("5") & result==0) {
+    			if (valor<101 & valor>80) {
+    				result = valor;
+    			}
+    		}
+    	}
+    	return result;
+    	
     }
+    
 }
