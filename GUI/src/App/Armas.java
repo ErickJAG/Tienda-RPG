@@ -1,5 +1,7 @@
 package App;
 
+import java.util.Random;
+
 import org.json.JSONObject;
 
 public class Armas {
@@ -16,8 +18,8 @@ public class Armas {
     	JSONObject InfoAPI = new JSONObject(API);
     	int valor=0;
     	int result=0;
-    	for(int i=0;i<250;i=i+1) {
-    		valor=InfoAPI.getJSONArray("products").getJSONObject(i).getJSONObject("reviews").getInt("rating");
+    	for(int i=0;i<50;i=i+1) {
+    		valor=InfoAPI.getJSONArray("products").getJSONObject(i).getJSONObject("price").getInt("current_price");
     		if (Opcion.equals("1") & result==0) {
     			if (valor<10 & valor>4) {
     				result = valor;
@@ -26,19 +28,24 @@ public class Armas {
     			if (valor<30 & valor>10) {
     				result = valor;
     			}
-    		}if (Opcion.equals("3") & result==0) {
+    		}else if (Opcion.equals("3") & result==0) {
     			if (valor<50 & valor>30) {
     				result = valor;
     			}
-    		}if (Opcion.equals("4") & result==0) {
+    		}else if (Opcion.equals("4") & result==0) {
     			if (valor<80 & valor>50) {
     				result = valor;
     			}
-    		}if (Opcion.equals("5") & result==0) {
-    			if (valor<101 & valor>80) {
+    		}else if (Opcion.equals("5") & result==0) {
+    			if (valor>80) {
     				result = valor;
     			}
     		}
+    	}
+    	if (result==0) {
+    		Random NR = new Random();
+    		int NumR = NR.nextInt(50);
+			result = InfoAPI.getJSONArray("products").getJSONObject(NumR).getJSONObject("price").getInt("current_price");
     	}
     	return result;
     	

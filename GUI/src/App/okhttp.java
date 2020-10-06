@@ -12,7 +12,7 @@ import org.json.JSONObject;
 
 public class okhttp {
 	
-	private static String getArmas() {
+	public static String getArmas() {
 		
 		OkHttpClient client = new OkHttpClient();
 	
@@ -20,11 +20,12 @@ public class okhttp {
 			.url("https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?category=aps&country=US&keyword=Knife")
 			.get()
 			.addHeader("x-rapidapi-host", "amazon-product-reviews-keywords.p.rapidapi.com")
-			.addHeader("x-rapidapi-key", "3b40755d70msh897a04950ebe446p198c13jsn24f48c7a9ef3")
+			.addHeader("x-rapidapi-key", "17f0207310mshefefa0ebd2fd786p14728djsn9ab7f2e156db")
 			.build();
 	
 		try (Response response = client.newCall(request).execute()){
 			String responseBody = response.body().string();
+			return (responseBody);
 			
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -35,15 +36,15 @@ public class okhttp {
 		
 	}
 	
-	private static String getArmaduras() {
+	public static String getArmaduras() {
 		
 		OkHttpClient client = new OkHttpClient();
 	
 		Request request = new Request.Builder()
-			.url("https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?category=aps&country=US&keyword=Bullelt%20proof%20vest")
+			.url("https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?category=aps&country=US&keyword=Bulleltproof%20vest")
 			.get()
 			.addHeader("x-rapidapi-host", "amazon-product-reviews-keywords.p.rapidapi.com")
-			.addHeader("x-rapidapi-key", "e9d4d4b63dmshb4c2fbc87c231bdp1bb1ccjsn6f4a92c45443")
+			.addHeader("x-rapidapi-key", "17f0207310mshefefa0ebd2fd786p14728djsn9ab7f2e156db")
 			.build();
 	
 		try (Response response = client.newCall(request).execute()){
@@ -59,15 +60,15 @@ public class okhttp {
 		
 	}
 
-	private static String getConsumibles() {
+	public static String getConsumibles() {
 		
 		OkHttpClient client = new OkHttpClient();
 	
 		Request request = new Request.Builder()
-			.url("https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?category=aps&country=US&keyword=Knife")
+			.url("https://amazon-product-reviews-keywords.p.rapidapi.com/product/search?category=aps&country=US&keyword=Snacks")
 			.get()
 			.addHeader("x-rapidapi-host", "amazon-product-reviews-keywords.p.rapidapi.com")
-			.addHeader("x-rapidapi-key", "e9d4d4b63dmshb4c2fbc87c231bdp1bb1ccjsn6f4a92c45443")
+			.addHeader("x-rapidapi-key", "17f0207310mshefefa0ebd2fd786p14728djsn9ab7f2e156db")
 			.build();
 	
 		try (Response response = client.newCall(request).execute()){
