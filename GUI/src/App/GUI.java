@@ -1,5 +1,6 @@
 package App;
 
+//Librerias importadas
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
@@ -28,9 +29,7 @@ import org.json.JSONObject;
 
 public class GUI extends JFrame implements ActionListener {
 
-	/**
-	 * 
-	 */
+	//Elementos del interfaz definidos como estaticos para trabajrlos dentro de metodos
 	private static final long serialVersionUID = 1L;
 	private JPanel PanelGeneral;
 	public static JButton BtnArmaI1;
@@ -86,9 +85,9 @@ public class GUI extends JFrame implements ActionListener {
 	private static Integer HltBase;
 	private static Integer WgtBase;
 	public static Character personaje = new Character();
-	/**
-	 * Launch the application.
-	 */
+	
+	
+	//Inicio del programa principal
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -103,9 +102,7 @@ public class GUI extends JFrame implements ActionListener {
 		
 	}
 
-	/**
-	 * Create the frame.
-	 */
+	//Creacion del frame principal para la ventana
 	public GUI() {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(GUI.class.getResource("/App/Shop Icon.png")));
 		setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
@@ -125,12 +122,14 @@ public class GUI extends JFrame implements ActionListener {
         personaje.Defensa= 25;
         personaje.Velocidad= 125;
         personaje.Peso= 80;
-        //getJSONArray("products").getJSONObject(i).getJSONObject("reviews").getInt("rating");
+        //Obtencion de la informacion del API
         String APIarmas=okhttp.getArmas();
         String APIarmaduras=okhttp.getArmaduras();
         String APIconsumibles=okhttp.getConsumibles();
+        //Conversion del string obtenido a un objeto JSON
         JSONObject JArmas = new JSONObject(APIarmas);
         JSONObject JArmadura = new JSONObject(APIarmaduras);
+        //Definicion de objectos y sus atributos
         Armas Arma1 = new Armas();
         Arma1.Ataque=(int)JArmas.getJSONArray("products").getJSONObject(0).getJSONObject("reviews").getInt("rating");
         Arma1.Magia=0;
@@ -206,8 +205,10 @@ public class GUI extends JFrame implements ActionListener {
         Consumibles Consumible5 = new Consumibles();
         Consumible5.PrecioC=Consumibles.DefinirAtributoConsu("5", APIconsumibles);
         Consumible5.PrecioV=Consumible5.PrecioC/2;
+        //Comando principal para los botones
 		ActionListener actionListener = new ActionListener() {
-			public void actionPerformed(ActionEvent describir) {	
+			public void actionPerformed(ActionEvent describir) {
+				//Validacion para saber cual boton es el presionado
 				String command = describir.getActionCommand();
 				if (command == "IArma1"){
 					if(!(BtnArmaI1.getText()).equals("")) {
@@ -933,7 +934,7 @@ public class GUI extends JFrame implements ActionListener {
 		
 		
 		
-	
+		//Definicion del resto de objetos del la interfaz
 		setBackground(Color.WHITE);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 920, 630);
@@ -1625,7 +1626,7 @@ public class GUI extends JFrame implements ActionListener {
 		// TODO Auto-generated method stub
 		
 	}
-
+	//Metodo para cambiar los textos de los componentes del interfaz conforme a los datos obtenidos
 	public static void cambiaText(String texto,String num,String Op2,Integer Plata) {
 		if (texto.equals("")) {
 			OpcionInv="";
@@ -1773,6 +1774,7 @@ public class GUI extends JFrame implements ActionListener {
 			
 		}StatMny.setText(String.valueOf(personaje.Dinero));
 	}
+	//Metodo para mostrar que pieza de equipamineto es equipada
 	public static void cambiaEquip(String nombre, Integer tipo, Integer Stat1,Integer Stat2,Integer Stat3) {
 		if (!nombre.equals("")) {
 			if (tipo.equals(1)) {
@@ -1795,6 +1797,7 @@ public class GUI extends JFrame implements ActionListener {
 			StatSpd.setText(String.valueOf(personaje.Velocidad));
 		}
 	}
+	//Metodo que muestra los cambios que surgiran los stats del juegador al inspeccionar un arma
 	public static void muestraStatsA(Integer ataque,Integer magia,Integer velocidad) {
 		if (!(lblArma.getText()).equals("Arma:")) {
 			if (ataque != 0) {
@@ -1854,6 +1857,7 @@ public class GUI extends JFrame implements ActionListener {
 			}
 		}
 	}
+	//Metodo que muestra los cambios que surgiran los stats del juegador al inspeccionar una armadura
 	public static void muestraStatsB(Integer defensa,Integer salud,Integer peso) {
 		if (!(lblArmadura.getText()).equals("Armadura:")) {
 			if (defensa != 0) {
@@ -1908,6 +1912,7 @@ public class GUI extends JFrame implements ActionListener {
 			}
 		}
 	}
+	//Metodo que limpia los datos innecesarios al inspeccionar un consumible
 	public static void muestraStatsC() {
 		StatDfs.setText(personaje.Defensa+"");
 		StatWgt.setText(personaje.Peso+"");
@@ -1917,6 +1922,3 @@ public class GUI extends JFrame implements ActionListener {
 		StatMna.setText(personaje.Mana+"");
 	}
 }
-		
-	
-

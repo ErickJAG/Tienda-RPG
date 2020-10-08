@@ -13,7 +13,7 @@ public class Armadura {
     public int Salud;
     public int Peso;
     
-    
+    //Metodo para definir los atributos de las armaduras con base a la info del API
     public static int DefinirAtributoArmadura (String Opcion, String API) {
     	JSONObject InfoAPI = new JSONObject(API);
     	int valor=0;

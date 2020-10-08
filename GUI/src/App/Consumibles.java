@@ -11,7 +11,7 @@ public class Consumibles {
     public int PrecioV;
 
     
-    
+    //Metodo para definir los atributos de los consumibles con base a la info del API
     public static int DefinirAtributoConsu (String Opcion, String API) {
     	JSONObject InfoAPI = new JSONObject(API);
     	int valor=0;

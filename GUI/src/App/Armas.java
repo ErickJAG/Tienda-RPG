@@ -13,7 +13,7 @@ public class Armas {
     public int Magia;
     public int Velocidad;
 
-    
+    //Metodo para definir los atributos de las armas con base a la info del API
     public static int DefinirAtributoArma (String Opcion, String API) {
     	JSONObject InfoAPI = new JSONObject(API);
     	int valor=0;

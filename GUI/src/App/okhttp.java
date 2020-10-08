@@ -11,7 +11,7 @@ import java.util.Map;
 import org.json.JSONObject;
 
 public class okhttp {
-	
+	//Metodo para obtener el API para datos de armas
 	public static String getArmas() {
 		
 		OkHttpClient client = new OkHttpClient();
@@ -35,7 +35,7 @@ public class okhttp {
 		return null;
 		
 	}
-	
+	//Metodo para obtener el API para datos de armaduras
 	public static String getArmaduras() {
 		
 		OkHttpClient client = new OkHttpClient();
@@ -59,7 +59,7 @@ public class okhttp {
 		return null;
 		
 	}
-
+	//Metodo para obtener el API para datos de consumibles
 	public static String getConsumibles() {
 		
 		OkHttpClient client = new OkHttpClient();

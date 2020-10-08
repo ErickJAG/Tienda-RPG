@@ -19,7 +19,7 @@ public class Character {
     static List<Integer> inventarioArmas = new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0, 0));
     static List<Integer> inventarioConsumibles = new ArrayList<Integer>(Arrays.asList(0, 0, 0, 0, 0));
 
-    // metodo de compra
+    //Metodo que envia cual item se va a comprar
     public static void comprar(String opcion,Integer Money) {
         if (opcion.equals("Bate de Metal")) {
             inventarioArmas.set(0, inventarioArmas.get(0) + 1);
@@ -68,7 +68,7 @@ public class Character {
             GUI.cambiaText(opcion+" x"+inventarioConsumibles.get(4),"15","1",Money);
         }
     }
-    //metodo de vender
+    //Metodo que envia cual arma se va a vender
     public static void vender(String opcion,Integer Money) {
         if (opcion.equals("IArma1")) {
         	if (!inventarioArmas.get(0).equals(0)) {
@@ -222,6 +222,7 @@ public class Character {
         	}
         }
     }
+    //Metodo que envia el item que se esta equipando
     public static void Equipar(String opcion,Integer Stat1,Integer Stat2,Integer Stat3) {
     	if (opcion.equals("IArma1")) {
     		GUI.cambiaEquip("Bate de Metal",1,Stat1,Stat2,Stat3);
@@ -254,13 +255,7 @@ public class Character {
     		GUI.cambiaEquip("Placa Paladin",2,Stat1,Stat2,Stat3);
     	}
     }
-    //Metodo para definir los atributos de los objetos
-    public static void main(final String[] args) {
-        //Objeto
-        Character personaje = new Character();
-        //Definicions de atributos
+    
         
     }
-    
-
-}
+ 
